@@ -1,0 +1,13 @@
+# The reference result files are compared byte for byte against a fresh run, so no
+# end-of-line normalisation may be applied to them on checkout. The csv module writes
+# CRLF on every platform (RFC 4180), which is what these files contain.
+*.csv -text
+*.json -text
+*.xlsx binary
+*.xlsb binary
+
+# Source and documentation take the platform convention.
+*.py text
+*.md text
+*.txt text
+*.cff text

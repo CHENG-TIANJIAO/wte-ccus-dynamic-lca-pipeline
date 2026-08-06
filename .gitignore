@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# The chain writes its run here; the reference copies live at the repository root
+/calculation_code/outputs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# NEVER commit the laboratory source workbooks used by the optional provenance scripts
+*.xlsb
+CCU*.xlsx
+!Unified_calculation_workbook.xlsx

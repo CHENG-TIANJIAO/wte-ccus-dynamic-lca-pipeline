@@ -1,0 +1,146 @@
+{
+ "f_fossil_share": 0.35479411553183154,
+ "EF_SRC": 0.433,
+ "EF_OFFICIAL": 0.423,
+ "MWH_EF": {
+  "S0": -18847.0,
+  "M1": 40693.0,
+  "M2": 15363.0,
+  "M3": 11800.0,
+  "M4": 32310.0,
+  "G1": 956.0,
+  "G2": 2299.0,
+  "U1": 1882.2472233269,
+  "U2a": 9619.956244030534,
+  "U2b": 9619.956244030534,
+  "R1": -18490.0,
+  "R2": -18490.0,
+  "R3": -12799.0
+ },
+ "STATIC_SRC_BASIS": {
+  "U1": 21117.1553330335,
+  "U2a": -47673.72687302817,
+  "U2b": -14632.86625327741,
+  "S0": 18548.7084549104,
+  "M1": 33573.86872,
+  "M2": 37765.59708030014,
+  "M3": 41082.297009230766,
+  "M4": 58546.27515765885,
+  "G1": 12765.0,
+  "G2": 13356.0,
+  "R1": -7848.0,
+  "R2": -7848.0,
+  "R3": -7649.0
+ },
+ "T_NAT": 74621.269184,
+ "F_NAT": 26475.1872,
+ "CAPTURED": 67159.1422656,
+ "SLIP_F": 2647.51872,
+ "H2_FACTOR": {
+  "now": 5.4459,
+  "y2050": 3.535
+ },
+ "H2_MASS": {
+  "U1": 11810.745708777933,
+  "U2a": 9461.00338647939,
+  "U2b": 9461.00338647939
+ },
+ "H2_T": {
+  "U1": 64320.140055433745,
+  "U2a": 51523.67834242811,
+  "U2b": 51523.67834242811
+ },
+ "PRODUCT_MASS": {
+  "U1": 23158.324919172417,
+  "U2a": 46605.92801221374,
+  "U2b": 46605.92801221374
+ },
+ "CREDIT_PER_KG": {
+  "U1": 2.276732267628226,
+  "U2a": 2.3861764487098065,
+  "U2b": 2.3861764487098065
+ },
+ "QA": {
+  "U1": 75264.55598731036,
+  "U2a": 133921.13488360724,
+  "U2b": 82711.34059137794
+ },
+ "QB": {
+  "U1": 63527.689420174465,
+  "U2a": 64012.24286528664,
+  "U2b": 12802.448573057325
+ },
+ "VENT": {
+  "U1": 4400.081734642759,
+  "U2a": 4701.139958592001,
+  "U2b": 4701.139958592001
+ },
+ "L_REACTOR": {
+  "M1": 7462.126918400001,
+  "M2": 4029.54,
+  "M3": 7428.919742030769,
+  "M4": 840.3610561914672
+ },
+ "STATIC_V4": {
+  "U1": 21098.33286080023,
+  "U2a": -47769.92643546848,
+  "U2b": -14729.065815717717,
+  "S0": 18737.1784549104,
+  "M1": 33166.93872,
+  "M2": 37611.96708030014,
+  "M3": 40964.297009230766,
+  "M4": 58223.17515765885,
+  "G1": 12755.44,
+  "G2": 13333.01,
+  "R1": -7663.099999999999,
+  "R2": -7663.099999999999,
+  "R3": -7521.01
+ },
+ "POOLS": {
+  "U2b": {
+   "mode": "weibull",
+   "retention": 0.8,
+   "tau50": 10.0,
+   "k": 2.0,
+   "deferred_net": -33040.860619750776,
+   "intervention_release": 18168.93367247853,
+   "counterfactual_release_avoided": 51209.794292229315,
+   "note": "The retained 80 % of the product carbon is settled at the product lifetime in BOTH worlds. The intervention then releases f x 0.80 x M x stoich of net-new fossil CO2 while the counterfactual would have released the full 0.80 x M x stoich, so the deferred quantity is a NET CREDIT of (1 - f) x 0.80 x M x stoich. Durability itself cancels; only the carbon origin remains, and its benefit is postponed."
+  }
+ },
+ "E_PROC_MWH": {
+  "U1": 7642.247223326898,
+  "U2a": 15379.956244030534,
+  "U2b": 15379.956244030534
+ },
+ "FACTORS": {
+  "A_LNG": 3.25,
+  "GATE_LNG": 0.554,
+  "A_DIESEL_KG": 3.29,
+  "GATE_DIESEL_L": 0.152,
+  "RHO_DIESEL": 0.833,
+  "GATE_MEOH": 1.5,
+  "STOICH_CH4": 2.7431901764009226,
+  "STOICH_MEOH": 1.3734785593907994,
+  "ETA_MTO": 0.8
+ },
+ "EXCLUDED": {
+  "U3_microalgae": "Excluded: the source block does not close a carbon balance (40,411 t-CO2 in against 7,838 t renewable diesel plus 33,541 t-CO2 out; carbon out / carbon in = 1.44), so no consistent fossil-carbon partition can be built for it."
+ },
+ "KEEP_BURDENS": {
+  "U1": {
+   "elec": 14288.363920305,
+   "chem": 1578.23772648309,
+   "elec_prod": -13041.9225888,
+   "transport": 719.0,
+   "capital": 1770.0
+  },
+  "U2": {
+   "elec": 17638.7919262697,
+   "chem": 1578.23772648309,
+   "elec_prod": -13041.9225888,
+   "transport": 719.0,
+   "capital": 803.0
+  }
+ }
+}

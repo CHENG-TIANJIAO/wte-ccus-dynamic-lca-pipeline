@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+type: software
+title: "Data and code for a time-resolved and region-sensitive climate assessment of thirteen CO2 capture, utilization and recycling pathways for municipal waste incineration"
+version: "1.0.0"
+# doi: assigned by Zenodo on first release; insert the concept DOI here after archiving.
+repository-code: "https://github.com/CHENG-TIANJIAO/wte-ccus-dynamic-lca-pipeline"
+authors:
+  - family-names: "Cheng"
+    given-names: "Tianjiao"
+    affiliation: "Graduate School of Environment and Energy Engineering, Waseda University"
+  - family-names: "Onoda"
+    given-names: "Hiroshi"
+    affiliation: "Graduate School of Environment and Energy Engineering, Waseda University"
+license: "MIT"
+keywords:
+  - "waste-to-energy"
+  - "municipal solid waste incineration"
+  - "carbon capture and storage"
+  - "carbon capture and utilization"
+  - "mineralization"
+  - "chemical recycling"
+  - "life cycle assessment"
+  - "dynamic LCA"
+  - "cumulative radiative forcing"
+  - "regionalization"
+  - "Japan"
+  - "reproducible research"
