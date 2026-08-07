@@ -3,8 +3,16 @@
   "upload_type": "software",
   "description": "Complete machine-readable data and calculation chain behind the manuscript &quot;Time-resolved and region-sensitive climate assessment of thirteen CO2 capture, utilization and recycling pathways for municipal waste incineration&quot;.\n\nThirteen carbon-management pathways for a modal Japanese municipal solid waste incinerator (300 t/d, 84,000 t/y) are harmonized onto one explicit fossil-carbon balance with cradle-to-grave-symmetric substitution credits, resolved across the ten Japanese electricity supply regions, extended with a CO2 impulse-response climate layer, and propagated through a shared-draw Monte Carlo analysis.\n\nThe release contains 19 data files and the complete calculation chain: the 130 absolute pathway-region results and the 120 pairwise differences, the 50,000-row Monte Carlo master draw matrix and the draw-level outputs under both recycling boundary treatments, the 624 rank correlations, the Shapley decomposition audit over all eight background combinations, the 2050 regional evaluation, the hydrogen supply scenarios, and a unified calculation workbook that recomputes the governing equation with live Excel formulas as an independent implementation. A single entry point, run_all.py, regenerates every number, table and figure (Figures 2 to 6) from the fixed seed 20260702 and the input files shipped with the release. The reproduction was verified in a clean directory: 15 of 15 CSV files byte-identical and zero workbook cell or formula differences.\n\nLicensing: the Python code is released under the MIT licence and the data files and documentation under CC BY 4.0; see LICENSE and docs/DATA_AND_DOCUMENTATION_LICENSE.md. The national waste-characterization statistics and the utility-level grid emission factors reproduced in the input files are published by the Ministry of the Environment and the Ministry of Economy, Trade and Industry of Japan and remain subject to their own terms of use.\n\nFunded by the Japan Science and Technology Agency (JST) through the SICORP e-ASIA Joint Research Program (JPMJSC24E1) and by the Environment Research and Technology Development Fund (JPMEERF20253J01) of the Environmental Restoration and Conservation Agency (ERCA), Japan, funded by the Ministry of the Environment, Japan.",
   "creators": [
-    {"name": "Cheng, Tianjiao", "affiliation": "Graduate School of Environment and Energy Engineering, Waseda University"},
-    {"name": "Onoda, Hiroshi", "affiliation": "Graduate School of Environment and Energy Engineering, Waseda University"}
+    {
+      "name": "Cheng, Tianjiao",
+      "affiliation": "Graduate School of Environment and Energy Engineering, Waseda University",
+      "orcid": "0000-0002-5511-6743"
+    },
+    {
+      "name": "Onoda, Hiroshi",
+      "affiliation": "Graduate School of Environment and Energy Engineering, Waseda University",
+      "orcid": "0000-0002-6766-0682"
+    }
   ],
   "keywords": [
     "waste-to-energy",
