@@ -88,7 +88,7 @@ TO_REVIEW_BEFORE_PUBLIC_RELEASE/   release gate to run before going public
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff). Archived at Zenodo:
-[REPOSITORY DOI TO BE INSERTED ON DEPOSIT] (concept DOI, all versions).
+https://doi.org/10.5281/zenodo.21830579 (concept DOI, all versions).
 
 ## Licence
 

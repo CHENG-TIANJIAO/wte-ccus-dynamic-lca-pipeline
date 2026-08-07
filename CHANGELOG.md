@@ -3,7 +3,7 @@
 All notable changes to this pipeline are recorded here. The code version is mapped to the
 associated manuscript revision and the Zenodo DOI at release.
 
-## [1.0.0] - unreleased
+## [1.0.0] - 2026-08-07
 
 First public release accompanying the manuscript *"Time-resolved and region-sensitive
 climate assessment of thirteen CO2 capture, utilization and recycling pathways for
@@ -36,4 +36,4 @@ Code - manuscript - DOI mapping:
 
 | Code version | Archive version | Manuscript | Zenodo DOI |
 |---|---|---|---|
-| 1.0.0 | 4.0 | Waste Management submission | concept [TO BE INSERTED]; version [TO BE INSERTED] |
+| 1.0.0 | 4.0 | Waste Management submission | concept 10.5281/zenodo.21830579; version 10.5281/zenodo.21830580 |
