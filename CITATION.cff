@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or data, please cite it as below."
 type: software
 title: "Data and code for a time-resolved and region-sensitive climate assessment of thirteen CO2 capture, utilization and recycling pathways for municipal waste incineration"
-version: "1.0.0"
+version: "1.0.1"
 doi: "10.5281/zenodo.21830579"
 repository-code: "https://github.com/CHENG-TIANJIAO/wte-ccus-dynamic-lca-pipeline"
 authors:
