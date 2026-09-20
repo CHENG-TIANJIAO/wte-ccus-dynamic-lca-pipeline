@@ -13,8 +13,8 @@ give appropriate credit, link to the licence and indicate whether changes were m
 ## Third-party material
 
 The emission factors of the electricity suppliers and the national waste-characterization
-statistics reproduced in `calculation_code/region_waste_carbon.csv` and
-`calculation_code/regional_source/prefecture_waste_carbon.csv` are published by the Ministry
+statistics reproduced in `code/region_waste_carbon.csv` and
+`code/regional_source/prefecture_waste_carbon.csv` are published by the Ministry
 of the Environment of Japan and the Ministry of Economy, Trade and Industry and remain
 subject to their own terms of use. The values reproduced here are cited in the manuscript
 and in the Supplementary Information.

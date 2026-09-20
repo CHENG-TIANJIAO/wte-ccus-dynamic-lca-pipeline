@@ -1,7 +1,7 @@
 # Data dictionary
 
-Reference result files at the repository root. The chain regenerates all of them into
-`calculation_code/outputs/`.
+Reference result files in `code/outputs/`, which is also where the chain regenerates
+them.
 
 | File | Contents |
 |---|---|
@@ -26,9 +26,14 @@ Model inputs, read by the chain:
 
 | File | Contents |
 |---|---|
-| `calculation_code/model_parameters.json` | every model constant; the single source of coefficients |
-| `calculation_code/region_waste_carbon.csv` | ten-region waste composition profiles |
-| `calculation_code/regional_source/prefecture_waste_carbon.csv` | 47-prefecture composition profiles |
+| `code/model_parameters.json` | every model constant; the single source of coefficients |
+| `code/region_waste_carbon.csv` | ten-region waste composition profiles |
+| `code/regional_source/prefecture_waste_carbon.csv` | 47-prefecture composition profiles |
+
+The matrices in `analysis/` are the source files of Supplementary Fig. S1 (the pairwise
+rank correlations and win probabilities of every pathway pair, under both recycling boundary
+treatments) and Supplementary Table S29 (the interaction terms of the Shapley
+decomposition); each is written by the script of the same name in that directory.
 
 The workbook stores formulas without cached results. Open it in Excel or LibreOffice, which
 recalculate on open; reading it with openpyxl and `data_only=True` returns None for the

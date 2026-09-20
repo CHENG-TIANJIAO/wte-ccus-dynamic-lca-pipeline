@@ -8,6 +8,79 @@ Zenodo concept DOI, resolving to the newest version and cited in the manuscript:
 listed on that record page; version DOIs are not repeated here, because a release cannot
 contain the identifier that is minted from it.
 
+## [1.1.0] - unreleased
+
+Revision R1 of the manuscript (Waste Management, WM-26-3165). This version carries the
+frozen parameter ledger R1g, which is the sole numerical authority of the revised manuscript
+and its Supplementary Information; the intermediate ledgers R1a to R1f are development
+states and are not published.
+
+Changed - repository structure, so that the repository and the archive submitted with the
+revision hold the same content in the same layout:
+- `calculation_code/` is now `code/`, and the reference result files, which were at the
+  repository root, are now in `code/outputs/` where the chain writes them. `requirements.txt`
+  moved to `code/requirements.txt`.
+- New `analysis/`: the two analyses behind Supplementary Fig. S1 and Supplementary Table S29,
+  with the fourteen matrices they produce and the four comparison files of the original
+  submission that they read. Both resolve their own directory, so they run from anywhere in
+  the tree.
+- New `figures/`: `make_fig1_R1.py` with its layout definition `fig1_layout.py`,
+  `make_figs_R1.py` for Figures 2 to 6 and Fig. S1, the shared path resolver `r1_paths.py`,
+  and the typesetting post-processor applied to the manuscript file. Figure 1 is now drawn
+  from the model parameters by a script instead of by hand.
+- New `inputs/`: the two files of the fiscal-2021 national municipal-waste survey used for
+  the regional reconstruction, with their digests and download record, and the scripts and
+  tables of the reconstruction and of its validation.
+- New `MANIFEST_SHA256.txt` and `VERIFICATION.md`, replacing the earlier
+  `ZIP_VERIFICATION.md`. `.gitattributes` now keeps every tracked file byte-identical on
+  checkout, so those digests can be verified on any platform.
+- `LICENSE` scopes the MIT licence to every `.py` file in the repository, which the move out
+  of `calculation_code/` had left stale, and the CC BY 4.0 licence to the data files and the
+  documentation.
+
+Changed - model. The revision harmonizes the system boundary and corrects three inventory
+items; every step is recorded in the ledger notes of `code/model_parameters.json` and
+applied by the `apply_r1*.py` scripts kept beside it:
+- A common capture and conditioning module of 90 kWh per t-CO2 (15 capture unit, 10
+  condenser, 65 compressor) for all nine capture pathways, with family-specific downstream
+  modules: road-tanker liquefaction for utilization, ship liquefaction, unloading and, for
+  offshore injection, pumping to injection pressure for geological storage.
+- Plant air-pollution-control and boiler chemicals removed from the mineralization pathways,
+  which are outside the boundary of every pathway; all capture-pathway electricity taken
+  from the source-basis MWh at one factor; CO2 transport on a tonne-kilometre basis; the
+  capture-unit capital carried explicitly by the pathways that were missing it.
+- Three inventory corrections: the M4 CaO factor to the quicklime value 1.12, the M1 olivine
+  ore factor to 0.00786 instead of the talc proxy, and the R3 auxiliary electricity aligned
+  with its anchor at 780.2034 MWh.
+- The regional layer rebuilt from the facility-level national survey with tonnage weighting,
+  validated against the 33 prefecture profiles that the first version reproduces.
+- Declared discrete scenarios, selected with the environment variable `R1C_SCENARIO`
+  (Supplementary Table S31), covering the alternatives that were considered and not adopted,
+  among them the compressor-overlap upper bounds, the source-value M4 CaO factor, the R3
+  high-value-chemical electricity, and the M4 process-water transcription.
+
+Result of those changes: the reference plant is unchanged at 18,737.1785 t-CO2 per year,
+while the static national result of fuel-grade methanol moves from -47,769.9264 to
+-45,803.0134 t-CO2 per year. The revised values of all thirteen pathways are the ones in
+`code/outputs/` and in the manuscript; any number from version 1.0.x should be read as
+belonging to the original submission.
+
+Also included: the correction of the first author's affiliation to the Environmental
+Research Institute (commit 94a8769), which was made after 1.0.1 was released.
+
+Verification: the content was unpacked into a clean directory and run there with only the
+files inside it. The chain completed with no self-check failure, 85 of the 86 shipped files
+were reproduced or read back byte for byte, the workbook rebuilt with zero cell and formula
+differences, both analyses rewrote all fourteen published matrices byte for byte, and the
+seven regenerated PNG figures are byte-identical to the figures embedded in the manuscript.
+`VERIFICATION.md` is the record of that run.
+
+Note on digests: the archive submitted to the journal is a separate ZIP container holding
+this same content, so its SHA-256 is not the digest of the archive that GitHub generates
+from this tag, and neither is the digest of the other. The digest of the file submitted to
+the journal is recorded with the submission; `MANIFEST_SHA256.txt` is what identifies the
+content itself, in either container.
+
 ## [1.0.1] - 2026-08-07
 
 Packaging release. No change to the model, the input data, the calculation chain or any
@@ -56,7 +129,8 @@ Added:
 
 Code - archive - manuscript mapping:
 
-| Code version | Archive version | Manuscript |
+| Code version | Parameter ledger | Manuscript |
 |---|---|---|
-| 1.0.1 | 4.0 | Waste Management submission |
-| 1.0.0 | 4.0 | Waste Management submission |
+| 1.1.0 | R1g | Waste Management, revision R1 (WM-26-3165) |
+| 1.0.1 | model version 4.0 | Waste Management, original submission |
+| 1.0.0 | model version 4.0 | Waste Management, original submission |

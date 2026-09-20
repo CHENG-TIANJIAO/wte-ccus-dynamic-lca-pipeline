@@ -1,0 +1,18 @@
+0. SHA-256 of both raw files = SOURCE_RECORD.md
+1. 直接焼却量: 47 prefectures (rows 7-53), sum 31,491,040 t; row 54 "全国" = 31,491,040 t (formula =SUM(P7:P53))
+   prefecture names identical to the chain profiles (47)
+2. facility table 焼却: 1,060 facility rows (row 7 on), 47 prefectures, sum 年間処理量 32,906,704 t/年度 (104.5 % of 直接焼却量)
+3./4. region    n  直接焼却量 t (rebuilt = chain)   share %   plastic  moisture  fossil  CO2  CO2
+   Chubu      5       4,241,021                   13.47   22.97/22.97  45.36/45.36  34.84/34.84  1.8946/1.8946  0.6605/0.6605
+   Chugoku    5       1,827,383                    5.80   21.51/21.51  46.26/46.27  32.19/32.19  1.8784/1.8784  0.6059/0.6059
+   Hokkaido   1       1,078,253                    3.42   20.72/20.72  41.32/41.32  32.74/32.74  1.8515/1.8515  0.6062/0.6062
+   Hokuriku   3         703,836                    2.24   24.00/24.00  37.77/37.77  35.73/35.73  1.9063/1.9063  0.6812/0.6813
+   Kansai     6       5,343,173                   16.97   26.46/26.46  41.82/41.82  39.40/39.39  1.9015/1.9015  0.7492/0.7492
+   Kyushu     7       3,314,532                   10.53   23.57/23.57  46.22/46.22  36.13/36.13  1.8911/1.8911  0.6835/0.6835
+   Okinawa    1         395,644                    1.26   26.98/26.98  40.50/40.50  40.36/40.36  1.9320/1.9320  0.7797/0.7797
+   Shikoku    4         958,924                    3.05   22.37/22.37  46.20/46.20  34.68/34.68  1.8832/1.8832  0.6531/0.6531
+   Tohoku     7       3,068,686                    9.74   23.52/23.52  47.42/47.42  36.14/36.14  1.8947/1.8947  0.6854/0.6854
+   Tokyo      8      10,559,588                   33.53   24.71/24.71  43.73/43.73  37.18/37.18  1.8979/1.8979  0.7064/0.7064
+   max |rebuilt - chain|: plastic_pct 0.0046, moisture_pct 0.005, fossil_share_of_C_pct 0.0063, CO2_total_t_per_t_dry 4.7e-05, CO2_fossil_t_per_t_dry 7.1e-05
+   (tolerance = one unit of the last decimal: rounded prefecture inputs + rounded region outputs; the exact, unrounded rebuild of the prefecture profiles and regions is 02_analyses/R1e_regional/build_R1e.py, whose outputs are the installed chain tables byte for byte)
+wrote W2a_weights_rebuilt.csv (47 prefectures). ALL CHECKS PASSED

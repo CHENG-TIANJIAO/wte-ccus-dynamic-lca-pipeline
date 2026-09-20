@@ -6,8 +6,16 @@ __pycache__/
 .venv/
 venv/
 
-# The chain writes its run here; the reference copies live at the repository root
-/calculation_code/outputs/
+# code/outputs/ is tracked: it holds the reference result files the chain must reproduce.
+# Everything the run renders or reports beside them is generated and is not tracked.
+/figures/out/
+/code/outputs/*.png
+/code/outputs/*.pdf
+/analysis/E5_shapley_interactions.md
+/analysis/F5_FigS1.png
+/analysis/F5_FigS1.pdf
+/analysis/F5_mc_runtime.txt
+/analysis/F5_mc_R0_vs_R1f_*.csv
 
 # OS / editor
 .DS_Store

@@ -1,0 +1,14 @@
+{
+ "formula": "exp(sample standard deviation of ln x, ddof = 1)",
+ "check_R0_fossil_share_47pref": 1.1062436662037072,
+ "check_R0_T_unweighted_regions": 1.0129116922371815,
+ "R1d_T_W2a_regions_not_used_by_R1d_MC": 1.0116915635149295,
+ "R1e_fossil_share_47pref": 1.1031141542916696,
+ "R1e_T_W2a_regions": 1.0109736508779386,
+ "R1e_fossil_share_W2a_regions": 1.0742114274239876,
+ "R1e_CO2_fossil_W2a_regions": 1.0840394661159107,
+ "MC_constants_R1d": {
+  "throughput": 1.0129,
+  "fossil_share": 1.1062
+ }
+}

@@ -6,8 +6,13 @@
 *.xlsx binary
 *.xlsb binary
 
-# Source and documentation take the platform convention.
-*.py text
-*.md text
-*.txt text
-*.cff text
+# MANIFEST_SHA256.txt gives the digest of every file as it is stored here, so no file may
+# change on checkout: the source and documentation keep their line endings (LF) as well.
+*.py -text
+*.md -text
+*.txt -text
+*.cff -text
+*.log -text
+.gitignore -text
+.gitattributes -text
+LICENSE -text

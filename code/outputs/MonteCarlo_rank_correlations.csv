@@ -1,0 +1,729 @@
+treatment,pathway,input_variable,variable_class,applies_to,spearman_coefficient,sample_size,seed
+A,S0,fossil_C,shared background,all,0.9829,50000,20260702
+A,S0,throughput,shared background,all,0.0939,50000,20260702
+A,S0,grid_EF,shared background,all,-0.1687,50000,20260702
+A,S0,capture_rate,shared background,capture pathways only,0.0122,50000,20260702
+A,S0,H2_EF,shared background,utilization pathways only,0.0020,50000,20260702
+A,S0,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.9762,50000,20260702
+A,S0,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0020,50000,20260702
+A,S0,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0058,50000,20260702
+A,S0,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0023,50000,20260702
+A,S0,elec_mult_min,process-electricity multiplier,technology family min,-0.0016,50000,20260702
+A,S0,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0101,50000,20260702
+A,S0,rem_mult_S0,residual multiplier,pathway S0,0.0148,50000,20260702
+A,S0,rem_mult_M1,residual multiplier,pathway M1,-0.0025,50000,20260702
+A,S0,rem_mult_M2,residual multiplier,pathway M2,-0.0065,50000,20260702
+A,S0,rem_mult_M3,residual multiplier,pathway M3,0.0074,50000,20260702
+A,S0,rem_mult_M4,residual multiplier,pathway M4,-0.0131,50000,20260702
+A,S0,rem_mult_G1,residual multiplier,pathway G1,-0.0082,50000,20260702
+A,S0,rem_mult_G2,residual multiplier,pathway G2,0.0026,50000,20260702
+A,S0,rem_mult_U1,residual multiplier,pathway U1,0.0042,50000,20260702
+A,S0,rem_mult_U2a,residual multiplier,pathway U2a,-0.0082,50000,20260702
+A,S0,rem_mult_U2b,residual multiplier,pathway U2b,0.0037,50000,20260702
+A,S0,rem_mult_R1,residual multiplier,pathway R1,0.0064,50000,20260702
+A,S0,rem_mult_R2,residual multiplier,pathway R2,-0.0008,50000,20260702
+A,S0,rem_mult_R3,residual multiplier,pathway R3,-0.0017,50000,20260702
+A,S0,reag_mult,capture-solvent multiplier (R1),capture pathways only,-0.0008,50000,20260702
+A,S0,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0050,50000,20260702
+A,S0,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0099,50000,20260702
+A,S0,trans_mult_min,transport multiplier (R1),capture family min,0.0025,50000,20260702
+A,M1,fossil_C,shared background,all,0.2249,50000,20260702
+A,M1,throughput,shared background,all,0.1608,50000,20260702
+A,M1,grid_EF,shared background,all,0.4034,50000,20260702
+A,M1,capture_rate,shared background,capture pathways only,0.0917,50000,20260702
+A,M1,H2_EF,shared background,utilization pathways only,-0.0014,50000,20260702
+A,M1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.2084,50000,20260702
+A,M1,elec_mult_ccu,process-electricity multiplier,technology family ccu,-0.0015,50000,20260702
+A,M1,elec_mult_cr,process-electricity multiplier,technology family cr,0.0032,50000,20260702
+A,M1,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0021,50000,20260702
+A,M1,elec_mult_min,process-electricity multiplier,technology family min,0.7747,50000,20260702
+A,M1,elec_mult_ref,process-electricity multiplier,technology family ref,0.0002,50000,20260702
+A,M1,rem_mult_S0,residual multiplier,pathway S0,-0.0026,50000,20260702
+A,M1,rem_mult_M1,residual multiplier,pathway M1,0.0590,50000,20260702
+A,M1,rem_mult_M2,residual multiplier,pathway M2,0.0080,50000,20260702
+A,M1,rem_mult_M3,residual multiplier,pathway M3,0.0081,50000,20260702
+A,M1,rem_mult_M4,residual multiplier,pathway M4,-0.0005,50000,20260702
+A,M1,rem_mult_G1,residual multiplier,pathway G1,-0.0005,50000,20260702
+A,M1,rem_mult_G2,residual multiplier,pathway G2,-0.0041,50000,20260702
+A,M1,rem_mult_U1,residual multiplier,pathway U1,-0.0056,50000,20260702
+A,M1,rem_mult_U2a,residual multiplier,pathway U2a,-0.0000,50000,20260702
+A,M1,rem_mult_U2b,residual multiplier,pathway U2b,0.0045,50000,20260702
+A,M1,rem_mult_R1,residual multiplier,pathway R1,0.0027,50000,20260702
+A,M1,rem_mult_R2,residual multiplier,pathway R2,-0.0060,50000,20260702
+A,M1,rem_mult_R3,residual multiplier,pathway R3,-0.0101,50000,20260702
+A,M1,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0567,50000,20260702
+A,M1,trans_mult_ccu,transport multiplier (R1),capture family ccu,-0.0005,50000,20260702
+A,M1,trans_mult_geo,transport multiplier (R1),capture family geo,0.0022,50000,20260702
+A,M1,trans_mult_min,transport multiplier (R1),capture family min,0.3155,50000,20260702
+A,M2,fossil_C,shared background,all,0.1439,50000,20260702
+A,M2,throughput,shared background,all,0.1054,50000,20260702
+A,M2,grid_EF,shared background,all,0.1365,50000,20260702
+A,M2,capture_rate,shared background,capture pathways only,0.0118,50000,20260702
+A,M2,H2_EF,shared background,utilization pathways only,0.0051,50000,20260702
+A,M2,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.1331,50000,20260702
+A,M2,elec_mult_ccu,process-electricity multiplier,technology family ccu,-0.0053,50000,20260702
+A,M2,elec_mult_cr,process-electricity multiplier,technology family cr,0.0004,50000,20260702
+A,M2,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0001,50000,20260702
+A,M2,elec_mult_min,process-electricity multiplier,technology family min,0.3023,50000,20260702
+A,M2,elec_mult_ref,process-electricity multiplier,technology family ref,0.0046,50000,20260702
+A,M2,rem_mult_S0,residual multiplier,pathway S0,-0.0001,50000,20260702
+A,M2,rem_mult_M1,residual multiplier,pathway M1,-0.0044,50000,20260702
+A,M2,rem_mult_M2,residual multiplier,pathway M2,0.8136,50000,20260702
+A,M2,rem_mult_M3,residual multiplier,pathway M3,0.0025,50000,20260702
+A,M2,rem_mult_M4,residual multiplier,pathway M4,-0.0023,50000,20260702
+A,M2,rem_mult_G1,residual multiplier,pathway G1,-0.0033,50000,20260702
+A,M2,rem_mult_G2,residual multiplier,pathway G2,0.0039,50000,20260702
+A,M2,rem_mult_U1,residual multiplier,pathway U1,-0.0030,50000,20260702
+A,M2,rem_mult_U2a,residual multiplier,pathway U2a,0.0061,50000,20260702
+A,M2,rem_mult_U2b,residual multiplier,pathway U2b,0.0024,50000,20260702
+A,M2,rem_mult_R1,residual multiplier,pathway R1,-0.0030,50000,20260702
+A,M2,rem_mult_R2,residual multiplier,pathway R2,-0.0075,50000,20260702
+A,M2,rem_mult_R3,residual multiplier,pathway R3,0.0001,50000,20260702
+A,M2,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0541,50000,20260702
+A,M2,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0068,50000,20260702
+A,M2,trans_mult_geo,transport multiplier (R1),capture family geo,0.0026,50000,20260702
+A,M2,trans_mult_min,transport multiplier (R1),capture family min,0.3933,50000,20260702
+A,M3,fossil_C,shared background,all,0.1339,50000,20260702
+A,M3,throughput,shared background,all,0.0485,50000,20260702
+A,M3,grid_EF,shared background,all,0.0752,50000,20260702
+A,M3,capture_rate,shared background,capture pathways only,-0.0290,50000,20260702
+A,M3,H2_EF,shared background,utilization pathways only,-0.0025,50000,20260702
+A,M3,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.1289,50000,20260702
+A,M3,elec_mult_ccu,process-electricity multiplier,technology family ccu,-0.0005,50000,20260702
+A,M3,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0009,50000,20260702
+A,M3,elec_mult_geo,process-electricity multiplier,technology family geo,0.0025,50000,20260702
+A,M3,elec_mult_min,process-electricity multiplier,technology family min,0.1696,50000,20260702
+A,M3,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0057,50000,20260702
+A,M3,rem_mult_S0,residual multiplier,pathway S0,0.0055,50000,20260702
+A,M3,rem_mult_M1,residual multiplier,pathway M1,0.0060,50000,20260702
+A,M3,rem_mult_M2,residual multiplier,pathway M2,-0.0016,50000,20260702
+A,M3,rem_mult_M3,residual multiplier,pathway M3,0.9674,50000,20260702
+A,M3,rem_mult_M4,residual multiplier,pathway M4,-0.0066,50000,20260702
+A,M3,rem_mult_G1,residual multiplier,pathway G1,-0.0012,50000,20260702
+A,M3,rem_mult_G2,residual multiplier,pathway G2,0.0047,50000,20260702
+A,M3,rem_mult_U1,residual multiplier,pathway U1,0.0060,50000,20260702
+A,M3,rem_mult_U2a,residual multiplier,pathway U2a,-0.0104,50000,20260702
+A,M3,rem_mult_U2b,residual multiplier,pathway U2b,-0.0026,50000,20260702
+A,M3,rem_mult_R1,residual multiplier,pathway R1,0.0030,50000,20260702
+A,M3,rem_mult_R2,residual multiplier,pathway R2,0.0044,50000,20260702
+A,M3,rem_mult_R3,residual multiplier,pathway R3,-0.0126,50000,20260702
+A,M3,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0392,50000,20260702
+A,M3,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0045,50000,20260702
+A,M3,trans_mult_geo,transport multiplier (R1),capture family geo,0.0006,50000,20260702
+A,M3,trans_mult_min,transport multiplier (R1),capture family min,0.0137,50000,20260702
+A,M4,fossil_C,shared background,all,0.0196,50000,20260702
+A,M4,throughput,shared background,all,0.0276,50000,20260702
+A,M4,grid_EF,shared background,all,0.0860,50000,20260702
+A,M4,capture_rate,shared background,capture pathways only,0.0141,50000,20260702
+A,M4,H2_EF,shared background,utilization pathways only,0.0076,50000,20260702
+A,M4,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.0167,50000,20260702
+A,M4,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0125,50000,20260702
+A,M4,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0016,50000,20260702
+A,M4,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0056,50000,20260702
+A,M4,elec_mult_min,process-electricity multiplier,technology family min,0.1689,50000,20260702
+A,M4,elec_mult_ref,process-electricity multiplier,technology family ref,0.0004,50000,20260702
+A,M4,rem_mult_S0,residual multiplier,pathway S0,0.0068,50000,20260702
+A,M4,rem_mult_M1,residual multiplier,pathway M1,0.0021,50000,20260702
+A,M4,rem_mult_M2,residual multiplier,pathway M2,0.0000,50000,20260702
+A,M4,rem_mult_M3,residual multiplier,pathway M3,-0.0038,50000,20260702
+A,M4,rem_mult_M4,residual multiplier,pathway M4,0.9778,50000,20260702
+A,M4,rem_mult_G1,residual multiplier,pathway G1,-0.0007,50000,20260702
+A,M4,rem_mult_G2,residual multiplier,pathway G2,0.0051,50000,20260702
+A,M4,rem_mult_U1,residual multiplier,pathway U1,-0.0031,50000,20260702
+A,M4,rem_mult_U2a,residual multiplier,pathway U2a,0.0033,50000,20260702
+A,M4,rem_mult_U2b,residual multiplier,pathway U2b,0.0049,50000,20260702
+A,M4,rem_mult_R1,residual multiplier,pathway R1,-0.0027,50000,20260702
+A,M4,rem_mult_R2,residual multiplier,pathway R2,0.0026,50000,20260702
+A,M4,rem_mult_R3,residual multiplier,pathway R3,0.0006,50000,20260702
+A,M4,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0144,50000,20260702
+A,M4,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0033,50000,20260702
+A,M4,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0040,50000,20260702
+A,M4,trans_mult_min,transport multiplier (R1),capture family min,0.0032,50000,20260702
+A,G1,fossil_C,shared background,all,0.4423,50000,20260702
+A,G1,throughput,shared background,all,0.2450,50000,20260702
+A,G1,grid_EF,shared background,all,0.0643,50000,20260702
+A,G1,capture_rate,shared background,capture pathways only,-0.4182,50000,20260702
+A,G1,H2_EF,shared background,utilization pathways only,-0.0014,50000,20260702
+A,G1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.4168,50000,20260702
+A,G1,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0079,50000,20260702
+A,G1,elec_mult_cr,process-electricity multiplier,technology family cr,0.0016,50000,20260702
+A,G1,elec_mult_geo,process-electricity multiplier,technology family geo,0.4985,50000,20260702
+A,G1,elec_mult_min,process-electricity multiplier,technology family min,0.0020,50000,20260702
+A,G1,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0112,50000,20260702
+A,G1,rem_mult_S0,residual multiplier,pathway S0,-0.0049,50000,20260702
+A,G1,rem_mult_M1,residual multiplier,pathway M1,-0.0073,50000,20260702
+A,G1,rem_mult_M2,residual multiplier,pathway M2,-0.0011,50000,20260702
+A,G1,rem_mult_M3,residual multiplier,pathway M3,0.0079,50000,20260702
+A,G1,rem_mult_M4,residual multiplier,pathway M4,-0.0166,50000,20260702
+A,G1,rem_mult_G1,residual multiplier,pathway G1,0.2266,50000,20260702
+A,G1,rem_mult_G2,residual multiplier,pathway G2,0.0086,50000,20260702
+A,G1,rem_mult_U1,residual multiplier,pathway U1,0.0009,50000,20260702
+A,G1,rem_mult_U2a,residual multiplier,pathway U2a,-0.0089,50000,20260702
+A,G1,rem_mult_U2b,residual multiplier,pathway U2b,-0.0006,50000,20260702
+A,G1,rem_mult_R1,residual multiplier,pathway R1,-0.0029,50000,20260702
+A,G1,rem_mult_R2,residual multiplier,pathway R2,-0.0059,50000,20260702
+A,G1,rem_mult_R3,residual multiplier,pathway R3,0.0009,50000,20260702
+A,G1,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.2434,50000,20260702
+A,G1,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0139,50000,20260702
+A,G1,trans_mult_geo,transport multiplier (R1),capture family geo,0.3700,50000,20260702
+A,G1,trans_mult_min,transport multiplier (R1),capture family min,0.0027,50000,20260702
+A,G2,fossil_C,shared background,all,0.4409,50000,20260702
+A,G2,throughput,shared background,all,0.2467,50000,20260702
+A,G2,grid_EF,shared background,all,0.0694,50000,20260702
+A,G2,capture_rate,shared background,capture pathways only,-0.4124,50000,20260702
+A,G2,H2_EF,shared background,utilization pathways only,-0.0022,50000,20260702
+A,G2,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.4152,50000,20260702
+A,G2,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0078,50000,20260702
+A,G2,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0000,50000,20260702
+A,G2,elec_mult_geo,process-electricity multiplier,technology family geo,0.5067,50000,20260702
+A,G2,elec_mult_min,process-electricity multiplier,technology family min,-0.0009,50000,20260702
+A,G2,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0121,50000,20260702
+A,G2,rem_mult_S0,residual multiplier,pathway S0,-0.0049,50000,20260702
+A,G2,rem_mult_M1,residual multiplier,pathway M1,-0.0075,50000,20260702
+A,G2,rem_mult_M2,residual multiplier,pathway M2,0.0001,50000,20260702
+A,G2,rem_mult_M3,residual multiplier,pathway M3,0.0091,50000,20260702
+A,G2,rem_mult_M4,residual multiplier,pathway M4,-0.0156,50000,20260702
+A,G2,rem_mult_G1,residual multiplier,pathway G1,0.0016,50000,20260702
+A,G2,rem_mult_G2,residual multiplier,pathway G2,0.2352,50000,20260702
+A,G2,rem_mult_U1,residual multiplier,pathway U1,0.0020,50000,20260702
+A,G2,rem_mult_U2a,residual multiplier,pathway U2a,-0.0090,50000,20260702
+A,G2,rem_mult_U2b,residual multiplier,pathway U2b,-0.0015,50000,20260702
+A,G2,rem_mult_R1,residual multiplier,pathway R1,-0.0017,50000,20260702
+A,G2,rem_mult_R2,residual multiplier,pathway R2,-0.0061,50000,20260702
+A,G2,rem_mult_R3,residual multiplier,pathway R3,0.0007,50000,20260702
+A,G2,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.2432,50000,20260702
+A,G2,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0152,50000,20260702
+A,G2,trans_mult_geo,transport multiplier (R1),capture family geo,0.3663,50000,20260702
+A,G2,trans_mult_min,transport multiplier (R1),capture family min,0.0029,50000,20260702
+A,U1,fossil_C,shared background,all,0.2136,50000,20260702
+A,U1,throughput,shared background,all,0.0182,50000,20260702
+A,U1,grid_EF,shared background,all,0.0142,50000,20260702
+A,U1,capture_rate,shared background,capture pathways only,0.0021,50000,20260702
+A,U1,H2_EF,shared background,utilization pathways only,0.9703,50000,20260702
+A,U1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.2126,50000,20260702
+A,U1,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0476,50000,20260702
+A,U1,elec_mult_cr,process-electricity multiplier,technology family cr,0.0016,50000,20260702
+A,U1,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0048,50000,20260702
+A,U1,elec_mult_min,process-electricity multiplier,technology family min,0.0019,50000,20260702
+A,U1,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0012,50000,20260702
+A,U1,rem_mult_S0,residual multiplier,pathway S0,0.0037,50000,20260702
+A,U1,rem_mult_M1,residual multiplier,pathway M1,-0.0027,50000,20260702
+A,U1,rem_mult_M2,residual multiplier,pathway M2,0.0039,50000,20260702
+A,U1,rem_mult_M3,residual multiplier,pathway M3,-0.0004,50000,20260702
+A,U1,rem_mult_M4,residual multiplier,pathway M4,0.0052,50000,20260702
+A,U1,rem_mult_G1,residual multiplier,pathway G1,-0.0061,50000,20260702
+A,U1,rem_mult_G2,residual multiplier,pathway G2,-0.0040,50000,20260702
+A,U1,rem_mult_U1,residual multiplier,pathway U1,0.0152,50000,20260702
+A,U1,rem_mult_U2a,residual multiplier,pathway U2a,0.0020,50000,20260702
+A,U1,rem_mult_U2b,residual multiplier,pathway U2b,0.0020,50000,20260702
+A,U1,rem_mult_R1,residual multiplier,pathway R1,0.0001,50000,20260702
+A,U1,rem_mult_R2,residual multiplier,pathway R2,0.0036,50000,20260702
+A,U1,rem_mult_R3,residual multiplier,pathway R3,0.0031,50000,20260702
+A,U1,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0163,50000,20260702
+A,U1,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0045,50000,20260702
+A,U1,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0036,50000,20260702
+A,U1,trans_mult_min,transport multiplier (R1),capture family min,-0.0014,50000,20260702
+A,U2a,fossil_C,shared background,all,0.2529,50000,20260702
+A,U2a,throughput,shared background,all,-0.0483,50000,20260702
+A,U2a,grid_EF,shared background,all,0.0379,50000,20260702
+A,U2a,capture_rate,shared background,capture pathways only,-0.1312,50000,20260702
+A,U2a,H2_EF,shared background,utilization pathways only,0.9405,50000,20260702
+A,U2a,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.2595,50000,20260702
+A,U2a,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0890,50000,20260702
+A,U2a,elec_mult_cr,process-electricity multiplier,technology family cr,0.0004,50000,20260702
+A,U2a,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0051,50000,20260702
+A,U2a,elec_mult_min,process-electricity multiplier,technology family min,0.0015,50000,20260702
+A,U2a,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0021,50000,20260702
+A,U2a,rem_mult_S0,residual multiplier,pathway S0,0.0036,50000,20260702
+A,U2a,rem_mult_M1,residual multiplier,pathway M1,-0.0027,50000,20260702
+A,U2a,rem_mult_M2,residual multiplier,pathway M2,0.0035,50000,20260702
+A,U2a,rem_mult_M3,residual multiplier,pathway M3,-0.0009,50000,20260702
+A,U2a,rem_mult_M4,residual multiplier,pathway M4,0.0033,50000,20260702
+A,U2a,rem_mult_G1,residual multiplier,pathway G1,-0.0054,50000,20260702
+A,U2a,rem_mult_G2,residual multiplier,pathway G2,-0.0038,50000,20260702
+A,U2a,rem_mult_U1,residual multiplier,pathway U1,0.0044,50000,20260702
+A,U2a,rem_mult_U2a,residual multiplier,pathway U2a,0.0139,50000,20260702
+A,U2a,rem_mult_U2b,residual multiplier,pathway U2b,0.0024,50000,20260702
+A,U2a,rem_mult_R1,residual multiplier,pathway R1,-0.0013,50000,20260702
+A,U2a,rem_mult_R2,residual multiplier,pathway R2,0.0048,50000,20260702
+A,U2a,rem_mult_R3,residual multiplier,pathway R3,0.0024,50000,20260702
+A,U2a,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0188,50000,20260702
+A,U2a,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0066,50000,20260702
+A,U2a,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0039,50000,20260702
+A,U2a,trans_mult_min,transport multiplier (R1),capture family min,-0.0015,50000,20260702
+A,U2b,fossil_C,shared background,all,0.0876,50000,20260702
+A,U2b,throughput,shared background,all,-0.0122,50000,20260702
+A,U2b,grid_EF,shared background,all,0.0394,50000,20260702
+A,U2b,capture_rate,shared background,capture pathways only,-0.0708,50000,20260702
+A,U2b,H2_EF,shared background,utilization pathways only,0.9854,50000,20260702
+A,U2b,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.0894,50000,20260702
+A,U2b,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0924,50000,20260702
+A,U2b,elec_mult_cr,process-electricity multiplier,technology family cr,0.0023,50000,20260702
+A,U2b,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0053,50000,20260702
+A,U2b,elec_mult_min,process-electricity multiplier,technology family min,0.0014,50000,20260702
+A,U2b,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0002,50000,20260702
+A,U2b,rem_mult_S0,residual multiplier,pathway S0,0.0027,50000,20260702
+A,U2b,rem_mult_M1,residual multiplier,pathway M1,-0.0022,50000,20260702
+A,U2b,rem_mult_M2,residual multiplier,pathway M2,0.0051,50000,20260702
+A,U2b,rem_mult_M3,residual multiplier,pathway M3,-0.0014,50000,20260702
+A,U2b,rem_mult_M4,residual multiplier,pathway M4,0.0073,50000,20260702
+A,U2b,rem_mult_G1,residual multiplier,pathway G1,-0.0041,50000,20260702
+A,U2b,rem_mult_G2,residual multiplier,pathway G2,-0.0041,50000,20260702
+A,U2b,rem_mult_U1,residual multiplier,pathway U1,0.0033,50000,20260702
+A,U2b,rem_mult_U2a,residual multiplier,pathway U2a,0.0023,50000,20260702
+A,U2b,rem_mult_U2b,residual multiplier,pathway U2b,0.0153,50000,20260702
+A,U2b,rem_mult_R1,residual multiplier,pathway R1,-0.0009,50000,20260702
+A,U2b,rem_mult_R2,residual multiplier,pathway R2,0.0045,50000,20260702
+A,U2b,rem_mult_R3,residual multiplier,pathway R3,0.0032,50000,20260702
+A,U2b,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0199,50000,20260702
+A,U2b,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0059,50000,20260702
+A,U2b,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0017,50000,20260702
+A,U2b,trans_mult_min,transport multiplier (R1),capture family min,-0.0018,50000,20260702
+A,R1,fossil_C,shared background,all,0.5465,50000,20260702
+A,R1,throughput,shared background,all,0.0571,50000,20260702
+A,R1,grid_EF,shared background,all,-0.2827,50000,20260702
+A,R1,capture_rate,shared background,capture pathways only,-0.0021,50000,20260702
+A,R1,H2_EF,shared background,utilization pathways only,0.0043,50000,20260702
+A,R1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.5424,50000,20260702
+A,R1,elec_mult_ccu,process-electricity multiplier,technology family ccu,-0.0021,50000,20260702
+A,R1,elec_mult_cr,process-electricity multiplier,technology family cr,0.0063,50000,20260702
+A,R1,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0002,50000,20260702
+A,R1,elec_mult_min,process-electricity multiplier,technology family min,-0.0039,50000,20260702
+A,R1,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0066,50000,20260702
+A,R1,rem_mult_S0,residual multiplier,pathway S0,0.0006,50000,20260702
+A,R1,rem_mult_M1,residual multiplier,pathway M1,-0.0011,50000,20260702
+A,R1,rem_mult_M2,residual multiplier,pathway M2,0.0001,50000,20260702
+A,R1,rem_mult_M3,residual multiplier,pathway M3,0.0015,50000,20260702
+A,R1,rem_mult_M4,residual multiplier,pathway M4,-0.0037,50000,20260702
+A,R1,rem_mult_G1,residual multiplier,pathway G1,-0.0001,50000,20260702
+A,R1,rem_mult_G2,residual multiplier,pathway G2,0.0003,50000,20260702
+A,R1,rem_mult_U1,residual multiplier,pathway U1,0.0029,50000,20260702
+A,R1,rem_mult_U2a,residual multiplier,pathway U2a,-0.0014,50000,20260702
+A,R1,rem_mult_U2b,residual multiplier,pathway U2b,0.0016,50000,20260702
+A,R1,rem_mult_R1,residual multiplier,pathway R1,-0.7511,50000,20260702
+A,R1,rem_mult_R2,residual multiplier,pathway R2,-0.0003,50000,20260702
+A,R1,rem_mult_R3,residual multiplier,pathway R3,0.0033,50000,20260702
+A,R1,reag_mult,capture-solvent multiplier (R1),capture pathways only,-0.0037,50000,20260702
+A,R1,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0018,50000,20260702
+A,R1,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0052,50000,20260702
+A,R1,trans_mult_min,transport multiplier (R1),capture family min,0.0017,50000,20260702
+A,R2,fossil_C,shared background,all,0.5486,50000,20260702
+A,R2,throughput,shared background,all,0.0578,50000,20260702
+A,R2,grid_EF,shared background,all,-0.2791,50000,20260702
+A,R2,capture_rate,shared background,capture pathways only,0.0104,50000,20260702
+A,R2,H2_EF,shared background,utilization pathways only,0.0007,50000,20260702
+A,R2,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.5443,50000,20260702
+A,R2,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0012,50000,20260702
+A,R2,elec_mult_cr,process-electricity multiplier,technology family cr,0.0019,50000,20260702
+A,R2,elec_mult_geo,process-electricity multiplier,technology family geo,0.0007,50000,20260702
+A,R2,elec_mult_min,process-electricity multiplier,technology family min,-0.0003,50000,20260702
+A,R2,elec_mult_ref,process-electricity multiplier,technology family ref,0.0002,50000,20260702
+A,R2,rem_mult_S0,residual multiplier,pathway S0,0.0025,50000,20260702
+A,R2,rem_mult_M1,residual multiplier,pathway M1,0.0013,50000,20260702
+A,R2,rem_mult_M2,residual multiplier,pathway M2,-0.0018,50000,20260702
+A,R2,rem_mult_M3,residual multiplier,pathway M3,-0.0021,50000,20260702
+A,R2,rem_mult_M4,residual multiplier,pathway M4,-0.0098,50000,20260702
+A,R2,rem_mult_G1,residual multiplier,pathway G1,-0.0036,50000,20260702
+A,R2,rem_mult_G2,residual multiplier,pathway G2,0.0046,50000,20260702
+A,R2,rem_mult_U1,residual multiplier,pathway U1,0.0071,50000,20260702
+A,R2,rem_mult_U2a,residual multiplier,pathway U2a,-0.0056,50000,20260702
+A,R2,rem_mult_U2b,residual multiplier,pathway U2b,-0.0028,50000,20260702
+A,R2,rem_mult_R1,residual multiplier,pathway R1,0.0023,50000,20260702
+A,R2,rem_mult_R2,residual multiplier,pathway R2,-0.7544,50000,20260702
+A,R2,rem_mult_R3,residual multiplier,pathway R3,-0.0048,50000,20260702
+A,R2,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0032,50000,20260702
+A,R2,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0044,50000,20260702
+A,R2,trans_mult_geo,transport multiplier (R1),capture family geo,0.0040,50000,20260702
+A,R2,trans_mult_min,transport multiplier (R1),capture family min,0.0068,50000,20260702
+A,R3,fossil_C,shared background,all,0.5584,50000,20260702
+A,R3,throughput,shared background,all,0.0542,50000,20260702
+A,R3,grid_EF,shared background,all,-0.2655,50000,20260702
+A,R3,capture_rate,shared background,capture pathways only,0.0102,50000,20260702
+A,R3,H2_EF,shared background,utilization pathways only,-0.0007,50000,20260702
+A,R3,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.5547,50000,20260702
+A,R3,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0042,50000,20260702
+A,R3,elec_mult_cr,process-electricity multiplier,technology family cr,0.0163,50000,20260702
+A,R3,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0018,50000,20260702
+A,R3,elec_mult_min,process-electricity multiplier,technology family min,0.0038,50000,20260702
+A,R3,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0005,50000,20260702
+A,R3,rem_mult_S0,residual multiplier,pathway S0,0.0016,50000,20260702
+A,R3,rem_mult_M1,residual multiplier,pathway M1,0.0001,50000,20260702
+A,R3,rem_mult_M2,residual multiplier,pathway M2,-0.0061,50000,20260702
+A,R3,rem_mult_M3,residual multiplier,pathway M3,0.0100,50000,20260702
+A,R3,rem_mult_M4,residual multiplier,pathway M4,-0.0113,50000,20260702
+A,R3,rem_mult_G1,residual multiplier,pathway G1,-0.0062,50000,20260702
+A,R3,rem_mult_G2,residual multiplier,pathway G2,0.0025,50000,20260702
+A,R3,rem_mult_U1,residual multiplier,pathway U1,0.0008,50000,20260702
+A,R3,rem_mult_U2a,residual multiplier,pathway U2a,-0.0007,50000,20260702
+A,R3,rem_mult_U2b,residual multiplier,pathway U2b,0.0045,50000,20260702
+A,R3,rem_mult_R1,residual multiplier,pathway R1,0.0046,50000,20260702
+A,R3,rem_mult_R2,residual multiplier,pathway R2,-0.0055,50000,20260702
+A,R3,rem_mult_R3,residual multiplier,pathway R3,-0.7520,50000,20260702
+A,R3,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0023,50000,20260702
+A,R3,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0082,50000,20260702
+A,R3,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0079,50000,20260702
+A,R3,trans_mult_min,transport multiplier (R1),capture family min,0.0005,50000,20260702
+B,S0,fossil_C,shared background,all,0.9829,50000,20260702
+B,S0,throughput,shared background,all,0.0939,50000,20260702
+B,S0,grid_EF,shared background,all,-0.1687,50000,20260702
+B,S0,capture_rate,shared background,capture pathways only,0.0122,50000,20260702
+B,S0,H2_EF,shared background,utilization pathways only,0.0020,50000,20260702
+B,S0,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.9762,50000,20260702
+B,S0,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0020,50000,20260702
+B,S0,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0058,50000,20260702
+B,S0,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0023,50000,20260702
+B,S0,elec_mult_min,process-electricity multiplier,technology family min,-0.0016,50000,20260702
+B,S0,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0101,50000,20260702
+B,S0,rem_mult_S0,residual multiplier,pathway S0,0.0148,50000,20260702
+B,S0,rem_mult_M1,residual multiplier,pathway M1,-0.0025,50000,20260702
+B,S0,rem_mult_M2,residual multiplier,pathway M2,-0.0065,50000,20260702
+B,S0,rem_mult_M3,residual multiplier,pathway M3,0.0074,50000,20260702
+B,S0,rem_mult_M4,residual multiplier,pathway M4,-0.0131,50000,20260702
+B,S0,rem_mult_G1,residual multiplier,pathway G1,-0.0082,50000,20260702
+B,S0,rem_mult_G2,residual multiplier,pathway G2,0.0026,50000,20260702
+B,S0,rem_mult_U1,residual multiplier,pathway U1,0.0042,50000,20260702
+B,S0,rem_mult_U2a,residual multiplier,pathway U2a,-0.0082,50000,20260702
+B,S0,rem_mult_U2b,residual multiplier,pathway U2b,0.0037,50000,20260702
+B,S0,rem_mult_R1,residual multiplier,pathway R1,0.0064,50000,20260702
+B,S0,rem_mult_R2,residual multiplier,pathway R2,-0.0008,50000,20260702
+B,S0,rem_mult_R3,residual multiplier,pathway R3,-0.0017,50000,20260702
+B,S0,reag_mult,capture-solvent multiplier (R1),capture pathways only,-0.0008,50000,20260702
+B,S0,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0050,50000,20260702
+B,S0,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0099,50000,20260702
+B,S0,trans_mult_min,transport multiplier (R1),capture family min,0.0025,50000,20260702
+B,M1,fossil_C,shared background,all,0.2249,50000,20260702
+B,M1,throughput,shared background,all,0.1608,50000,20260702
+B,M1,grid_EF,shared background,all,0.4034,50000,20260702
+B,M1,capture_rate,shared background,capture pathways only,0.0917,50000,20260702
+B,M1,H2_EF,shared background,utilization pathways only,-0.0014,50000,20260702
+B,M1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.2084,50000,20260702
+B,M1,elec_mult_ccu,process-electricity multiplier,technology family ccu,-0.0015,50000,20260702
+B,M1,elec_mult_cr,process-electricity multiplier,technology family cr,0.0032,50000,20260702
+B,M1,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0021,50000,20260702
+B,M1,elec_mult_min,process-electricity multiplier,technology family min,0.7747,50000,20260702
+B,M1,elec_mult_ref,process-electricity multiplier,technology family ref,0.0002,50000,20260702
+B,M1,rem_mult_S0,residual multiplier,pathway S0,-0.0026,50000,20260702
+B,M1,rem_mult_M1,residual multiplier,pathway M1,0.0590,50000,20260702
+B,M1,rem_mult_M2,residual multiplier,pathway M2,0.0080,50000,20260702
+B,M1,rem_mult_M3,residual multiplier,pathway M3,0.0081,50000,20260702
+B,M1,rem_mult_M4,residual multiplier,pathway M4,-0.0005,50000,20260702
+B,M1,rem_mult_G1,residual multiplier,pathway G1,-0.0005,50000,20260702
+B,M1,rem_mult_G2,residual multiplier,pathway G2,-0.0041,50000,20260702
+B,M1,rem_mult_U1,residual multiplier,pathway U1,-0.0056,50000,20260702
+B,M1,rem_mult_U2a,residual multiplier,pathway U2a,-0.0000,50000,20260702
+B,M1,rem_mult_U2b,residual multiplier,pathway U2b,0.0045,50000,20260702
+B,M1,rem_mult_R1,residual multiplier,pathway R1,0.0027,50000,20260702
+B,M1,rem_mult_R2,residual multiplier,pathway R2,-0.0060,50000,20260702
+B,M1,rem_mult_R3,residual multiplier,pathway R3,-0.0101,50000,20260702
+B,M1,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0567,50000,20260702
+B,M1,trans_mult_ccu,transport multiplier (R1),capture family ccu,-0.0005,50000,20260702
+B,M1,trans_mult_geo,transport multiplier (R1),capture family geo,0.0022,50000,20260702
+B,M1,trans_mult_min,transport multiplier (R1),capture family min,0.3155,50000,20260702
+B,M2,fossil_C,shared background,all,0.1439,50000,20260702
+B,M2,throughput,shared background,all,0.1054,50000,20260702
+B,M2,grid_EF,shared background,all,0.1365,50000,20260702
+B,M2,capture_rate,shared background,capture pathways only,0.0118,50000,20260702
+B,M2,H2_EF,shared background,utilization pathways only,0.0051,50000,20260702
+B,M2,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.1331,50000,20260702
+B,M2,elec_mult_ccu,process-electricity multiplier,technology family ccu,-0.0053,50000,20260702
+B,M2,elec_mult_cr,process-electricity multiplier,technology family cr,0.0004,50000,20260702
+B,M2,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0001,50000,20260702
+B,M2,elec_mult_min,process-electricity multiplier,technology family min,0.3023,50000,20260702
+B,M2,elec_mult_ref,process-electricity multiplier,technology family ref,0.0046,50000,20260702
+B,M2,rem_mult_S0,residual multiplier,pathway S0,-0.0001,50000,20260702
+B,M2,rem_mult_M1,residual multiplier,pathway M1,-0.0044,50000,20260702
+B,M2,rem_mult_M2,residual multiplier,pathway M2,0.8136,50000,20260702
+B,M2,rem_mult_M3,residual multiplier,pathway M3,0.0025,50000,20260702
+B,M2,rem_mult_M4,residual multiplier,pathway M4,-0.0023,50000,20260702
+B,M2,rem_mult_G1,residual multiplier,pathway G1,-0.0033,50000,20260702
+B,M2,rem_mult_G2,residual multiplier,pathway G2,0.0039,50000,20260702
+B,M2,rem_mult_U1,residual multiplier,pathway U1,-0.0030,50000,20260702
+B,M2,rem_mult_U2a,residual multiplier,pathway U2a,0.0061,50000,20260702
+B,M2,rem_mult_U2b,residual multiplier,pathway U2b,0.0024,50000,20260702
+B,M2,rem_mult_R1,residual multiplier,pathway R1,-0.0030,50000,20260702
+B,M2,rem_mult_R2,residual multiplier,pathway R2,-0.0075,50000,20260702
+B,M2,rem_mult_R3,residual multiplier,pathway R3,0.0001,50000,20260702
+B,M2,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0541,50000,20260702
+B,M2,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0068,50000,20260702
+B,M2,trans_mult_geo,transport multiplier (R1),capture family geo,0.0026,50000,20260702
+B,M2,trans_mult_min,transport multiplier (R1),capture family min,0.3933,50000,20260702
+B,M3,fossil_C,shared background,all,0.1339,50000,20260702
+B,M3,throughput,shared background,all,0.0485,50000,20260702
+B,M3,grid_EF,shared background,all,0.0752,50000,20260702
+B,M3,capture_rate,shared background,capture pathways only,-0.0290,50000,20260702
+B,M3,H2_EF,shared background,utilization pathways only,-0.0025,50000,20260702
+B,M3,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.1289,50000,20260702
+B,M3,elec_mult_ccu,process-electricity multiplier,technology family ccu,-0.0005,50000,20260702
+B,M3,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0009,50000,20260702
+B,M3,elec_mult_geo,process-electricity multiplier,technology family geo,0.0025,50000,20260702
+B,M3,elec_mult_min,process-electricity multiplier,technology family min,0.1696,50000,20260702
+B,M3,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0057,50000,20260702
+B,M3,rem_mult_S0,residual multiplier,pathway S0,0.0055,50000,20260702
+B,M3,rem_mult_M1,residual multiplier,pathway M1,0.0060,50000,20260702
+B,M3,rem_mult_M2,residual multiplier,pathway M2,-0.0016,50000,20260702
+B,M3,rem_mult_M3,residual multiplier,pathway M3,0.9674,50000,20260702
+B,M3,rem_mult_M4,residual multiplier,pathway M4,-0.0066,50000,20260702
+B,M3,rem_mult_G1,residual multiplier,pathway G1,-0.0012,50000,20260702
+B,M3,rem_mult_G2,residual multiplier,pathway G2,0.0047,50000,20260702
+B,M3,rem_mult_U1,residual multiplier,pathway U1,0.0060,50000,20260702
+B,M3,rem_mult_U2a,residual multiplier,pathway U2a,-0.0104,50000,20260702
+B,M3,rem_mult_U2b,residual multiplier,pathway U2b,-0.0026,50000,20260702
+B,M3,rem_mult_R1,residual multiplier,pathway R1,0.0030,50000,20260702
+B,M3,rem_mult_R2,residual multiplier,pathway R2,0.0044,50000,20260702
+B,M3,rem_mult_R3,residual multiplier,pathway R3,-0.0126,50000,20260702
+B,M3,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0392,50000,20260702
+B,M3,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0045,50000,20260702
+B,M3,trans_mult_geo,transport multiplier (R1),capture family geo,0.0006,50000,20260702
+B,M3,trans_mult_min,transport multiplier (R1),capture family min,0.0137,50000,20260702
+B,M4,fossil_C,shared background,all,0.0196,50000,20260702
+B,M4,throughput,shared background,all,0.0276,50000,20260702
+B,M4,grid_EF,shared background,all,0.0860,50000,20260702
+B,M4,capture_rate,shared background,capture pathways only,0.0141,50000,20260702
+B,M4,H2_EF,shared background,utilization pathways only,0.0076,50000,20260702
+B,M4,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.0167,50000,20260702
+B,M4,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0125,50000,20260702
+B,M4,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0016,50000,20260702
+B,M4,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0056,50000,20260702
+B,M4,elec_mult_min,process-electricity multiplier,technology family min,0.1689,50000,20260702
+B,M4,elec_mult_ref,process-electricity multiplier,technology family ref,0.0004,50000,20260702
+B,M4,rem_mult_S0,residual multiplier,pathway S0,0.0068,50000,20260702
+B,M4,rem_mult_M1,residual multiplier,pathway M1,0.0021,50000,20260702
+B,M4,rem_mult_M2,residual multiplier,pathway M2,0.0000,50000,20260702
+B,M4,rem_mult_M3,residual multiplier,pathway M3,-0.0038,50000,20260702
+B,M4,rem_mult_M4,residual multiplier,pathway M4,0.9778,50000,20260702
+B,M4,rem_mult_G1,residual multiplier,pathway G1,-0.0007,50000,20260702
+B,M4,rem_mult_G2,residual multiplier,pathway G2,0.0051,50000,20260702
+B,M4,rem_mult_U1,residual multiplier,pathway U1,-0.0031,50000,20260702
+B,M4,rem_mult_U2a,residual multiplier,pathway U2a,0.0033,50000,20260702
+B,M4,rem_mult_U2b,residual multiplier,pathway U2b,0.0049,50000,20260702
+B,M4,rem_mult_R1,residual multiplier,pathway R1,-0.0027,50000,20260702
+B,M4,rem_mult_R2,residual multiplier,pathway R2,0.0026,50000,20260702
+B,M4,rem_mult_R3,residual multiplier,pathway R3,0.0006,50000,20260702
+B,M4,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0144,50000,20260702
+B,M4,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0033,50000,20260702
+B,M4,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0040,50000,20260702
+B,M4,trans_mult_min,transport multiplier (R1),capture family min,0.0032,50000,20260702
+B,G1,fossil_C,shared background,all,0.4423,50000,20260702
+B,G1,throughput,shared background,all,0.2450,50000,20260702
+B,G1,grid_EF,shared background,all,0.0643,50000,20260702
+B,G1,capture_rate,shared background,capture pathways only,-0.4182,50000,20260702
+B,G1,H2_EF,shared background,utilization pathways only,-0.0014,50000,20260702
+B,G1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.4168,50000,20260702
+B,G1,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0079,50000,20260702
+B,G1,elec_mult_cr,process-electricity multiplier,technology family cr,0.0016,50000,20260702
+B,G1,elec_mult_geo,process-electricity multiplier,technology family geo,0.4985,50000,20260702
+B,G1,elec_mult_min,process-electricity multiplier,technology family min,0.0020,50000,20260702
+B,G1,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0112,50000,20260702
+B,G1,rem_mult_S0,residual multiplier,pathway S0,-0.0049,50000,20260702
+B,G1,rem_mult_M1,residual multiplier,pathway M1,-0.0073,50000,20260702
+B,G1,rem_mult_M2,residual multiplier,pathway M2,-0.0011,50000,20260702
+B,G1,rem_mult_M3,residual multiplier,pathway M3,0.0079,50000,20260702
+B,G1,rem_mult_M4,residual multiplier,pathway M4,-0.0166,50000,20260702
+B,G1,rem_mult_G1,residual multiplier,pathway G1,0.2266,50000,20260702
+B,G1,rem_mult_G2,residual multiplier,pathway G2,0.0086,50000,20260702
+B,G1,rem_mult_U1,residual multiplier,pathway U1,0.0009,50000,20260702
+B,G1,rem_mult_U2a,residual multiplier,pathway U2a,-0.0089,50000,20260702
+B,G1,rem_mult_U2b,residual multiplier,pathway U2b,-0.0006,50000,20260702
+B,G1,rem_mult_R1,residual multiplier,pathway R1,-0.0029,50000,20260702
+B,G1,rem_mult_R2,residual multiplier,pathway R2,-0.0059,50000,20260702
+B,G1,rem_mult_R3,residual multiplier,pathway R3,0.0009,50000,20260702
+B,G1,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.2434,50000,20260702
+B,G1,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0139,50000,20260702
+B,G1,trans_mult_geo,transport multiplier (R1),capture family geo,0.3700,50000,20260702
+B,G1,trans_mult_min,transport multiplier (R1),capture family min,0.0027,50000,20260702
+B,G2,fossil_C,shared background,all,0.4409,50000,20260702
+B,G2,throughput,shared background,all,0.2467,50000,20260702
+B,G2,grid_EF,shared background,all,0.0694,50000,20260702
+B,G2,capture_rate,shared background,capture pathways only,-0.4124,50000,20260702
+B,G2,H2_EF,shared background,utilization pathways only,-0.0022,50000,20260702
+B,G2,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.4152,50000,20260702
+B,G2,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0078,50000,20260702
+B,G2,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0000,50000,20260702
+B,G2,elec_mult_geo,process-electricity multiplier,technology family geo,0.5067,50000,20260702
+B,G2,elec_mult_min,process-electricity multiplier,technology family min,-0.0009,50000,20260702
+B,G2,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0121,50000,20260702
+B,G2,rem_mult_S0,residual multiplier,pathway S0,-0.0049,50000,20260702
+B,G2,rem_mult_M1,residual multiplier,pathway M1,-0.0075,50000,20260702
+B,G2,rem_mult_M2,residual multiplier,pathway M2,0.0001,50000,20260702
+B,G2,rem_mult_M3,residual multiplier,pathway M3,0.0091,50000,20260702
+B,G2,rem_mult_M4,residual multiplier,pathway M4,-0.0156,50000,20260702
+B,G2,rem_mult_G1,residual multiplier,pathway G1,0.0016,50000,20260702
+B,G2,rem_mult_G2,residual multiplier,pathway G2,0.2352,50000,20260702
+B,G2,rem_mult_U1,residual multiplier,pathway U1,0.0020,50000,20260702
+B,G2,rem_mult_U2a,residual multiplier,pathway U2a,-0.0090,50000,20260702
+B,G2,rem_mult_U2b,residual multiplier,pathway U2b,-0.0015,50000,20260702
+B,G2,rem_mult_R1,residual multiplier,pathway R1,-0.0017,50000,20260702
+B,G2,rem_mult_R2,residual multiplier,pathway R2,-0.0061,50000,20260702
+B,G2,rem_mult_R3,residual multiplier,pathway R3,0.0007,50000,20260702
+B,G2,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.2432,50000,20260702
+B,G2,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0152,50000,20260702
+B,G2,trans_mult_geo,transport multiplier (R1),capture family geo,0.3663,50000,20260702
+B,G2,trans_mult_min,transport multiplier (R1),capture family min,0.0029,50000,20260702
+B,U1,fossil_C,shared background,all,0.2136,50000,20260702
+B,U1,throughput,shared background,all,0.0182,50000,20260702
+B,U1,grid_EF,shared background,all,0.0142,50000,20260702
+B,U1,capture_rate,shared background,capture pathways only,0.0021,50000,20260702
+B,U1,H2_EF,shared background,utilization pathways only,0.9703,50000,20260702
+B,U1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.2126,50000,20260702
+B,U1,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0476,50000,20260702
+B,U1,elec_mult_cr,process-electricity multiplier,technology family cr,0.0016,50000,20260702
+B,U1,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0048,50000,20260702
+B,U1,elec_mult_min,process-electricity multiplier,technology family min,0.0019,50000,20260702
+B,U1,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0012,50000,20260702
+B,U1,rem_mult_S0,residual multiplier,pathway S0,0.0037,50000,20260702
+B,U1,rem_mult_M1,residual multiplier,pathway M1,-0.0027,50000,20260702
+B,U1,rem_mult_M2,residual multiplier,pathway M2,0.0039,50000,20260702
+B,U1,rem_mult_M3,residual multiplier,pathway M3,-0.0004,50000,20260702
+B,U1,rem_mult_M4,residual multiplier,pathway M4,0.0052,50000,20260702
+B,U1,rem_mult_G1,residual multiplier,pathway G1,-0.0061,50000,20260702
+B,U1,rem_mult_G2,residual multiplier,pathway G2,-0.0040,50000,20260702
+B,U1,rem_mult_U1,residual multiplier,pathway U1,0.0152,50000,20260702
+B,U1,rem_mult_U2a,residual multiplier,pathway U2a,0.0020,50000,20260702
+B,U1,rem_mult_U2b,residual multiplier,pathway U2b,0.0020,50000,20260702
+B,U1,rem_mult_R1,residual multiplier,pathway R1,0.0001,50000,20260702
+B,U1,rem_mult_R2,residual multiplier,pathway R2,0.0036,50000,20260702
+B,U1,rem_mult_R3,residual multiplier,pathway R3,0.0031,50000,20260702
+B,U1,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0163,50000,20260702
+B,U1,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0045,50000,20260702
+B,U1,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0036,50000,20260702
+B,U1,trans_mult_min,transport multiplier (R1),capture family min,-0.0014,50000,20260702
+B,U2a,fossil_C,shared background,all,0.2529,50000,20260702
+B,U2a,throughput,shared background,all,-0.0483,50000,20260702
+B,U2a,grid_EF,shared background,all,0.0379,50000,20260702
+B,U2a,capture_rate,shared background,capture pathways only,-0.1312,50000,20260702
+B,U2a,H2_EF,shared background,utilization pathways only,0.9405,50000,20260702
+B,U2a,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.2595,50000,20260702
+B,U2a,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0890,50000,20260702
+B,U2a,elec_mult_cr,process-electricity multiplier,technology family cr,0.0004,50000,20260702
+B,U2a,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0051,50000,20260702
+B,U2a,elec_mult_min,process-electricity multiplier,technology family min,0.0015,50000,20260702
+B,U2a,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0021,50000,20260702
+B,U2a,rem_mult_S0,residual multiplier,pathway S0,0.0036,50000,20260702
+B,U2a,rem_mult_M1,residual multiplier,pathway M1,-0.0027,50000,20260702
+B,U2a,rem_mult_M2,residual multiplier,pathway M2,0.0035,50000,20260702
+B,U2a,rem_mult_M3,residual multiplier,pathway M3,-0.0009,50000,20260702
+B,U2a,rem_mult_M4,residual multiplier,pathway M4,0.0033,50000,20260702
+B,U2a,rem_mult_G1,residual multiplier,pathway G1,-0.0054,50000,20260702
+B,U2a,rem_mult_G2,residual multiplier,pathway G2,-0.0038,50000,20260702
+B,U2a,rem_mult_U1,residual multiplier,pathway U1,0.0044,50000,20260702
+B,U2a,rem_mult_U2a,residual multiplier,pathway U2a,0.0139,50000,20260702
+B,U2a,rem_mult_U2b,residual multiplier,pathway U2b,0.0024,50000,20260702
+B,U2a,rem_mult_R1,residual multiplier,pathway R1,-0.0013,50000,20260702
+B,U2a,rem_mult_R2,residual multiplier,pathway R2,0.0048,50000,20260702
+B,U2a,rem_mult_R3,residual multiplier,pathway R3,0.0024,50000,20260702
+B,U2a,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0188,50000,20260702
+B,U2a,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0066,50000,20260702
+B,U2a,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0039,50000,20260702
+B,U2a,trans_mult_min,transport multiplier (R1),capture family min,-0.0015,50000,20260702
+B,U2b,fossil_C,shared background,all,0.0876,50000,20260702
+B,U2b,throughput,shared background,all,-0.0122,50000,20260702
+B,U2b,grid_EF,shared background,all,0.0394,50000,20260702
+B,U2b,capture_rate,shared background,capture pathways only,-0.0708,50000,20260702
+B,U2b,H2_EF,shared background,utilization pathways only,0.9854,50000,20260702
+B,U2b,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.0894,50000,20260702
+B,U2b,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0924,50000,20260702
+B,U2b,elec_mult_cr,process-electricity multiplier,technology family cr,0.0023,50000,20260702
+B,U2b,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0053,50000,20260702
+B,U2b,elec_mult_min,process-electricity multiplier,technology family min,0.0014,50000,20260702
+B,U2b,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0002,50000,20260702
+B,U2b,rem_mult_S0,residual multiplier,pathway S0,0.0027,50000,20260702
+B,U2b,rem_mult_M1,residual multiplier,pathway M1,-0.0022,50000,20260702
+B,U2b,rem_mult_M2,residual multiplier,pathway M2,0.0051,50000,20260702
+B,U2b,rem_mult_M3,residual multiplier,pathway M3,-0.0014,50000,20260702
+B,U2b,rem_mult_M4,residual multiplier,pathway M4,0.0073,50000,20260702
+B,U2b,rem_mult_G1,residual multiplier,pathway G1,-0.0041,50000,20260702
+B,U2b,rem_mult_G2,residual multiplier,pathway G2,-0.0041,50000,20260702
+B,U2b,rem_mult_U1,residual multiplier,pathway U1,0.0033,50000,20260702
+B,U2b,rem_mult_U2a,residual multiplier,pathway U2a,0.0023,50000,20260702
+B,U2b,rem_mult_U2b,residual multiplier,pathway U2b,0.0153,50000,20260702
+B,U2b,rem_mult_R1,residual multiplier,pathway R1,-0.0009,50000,20260702
+B,U2b,rem_mult_R2,residual multiplier,pathway R2,0.0045,50000,20260702
+B,U2b,rem_mult_R3,residual multiplier,pathway R3,0.0032,50000,20260702
+B,U2b,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0199,50000,20260702
+B,U2b,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0059,50000,20260702
+B,U2b,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0017,50000,20260702
+B,U2b,trans_mult_min,transport multiplier (R1),capture family min,-0.0018,50000,20260702
+B,R1,fossil_C,shared background,all,0.8876,50000,20260702
+B,R1,throughput,shared background,all,0.0866,50000,20260702
+B,R1,grid_EF,shared background,all,-0.1505,50000,20260702
+B,R1,capture_rate,shared background,capture pathways only,0.0056,50000,20260702
+B,R1,H2_EF,shared background,utilization pathways only,0.0035,50000,20260702
+B,R1,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.8814,50000,20260702
+B,R1,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0004,50000,20260702
+B,R1,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0006,50000,20260702
+B,R1,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0017,50000,20260702
+B,R1,elec_mult_min,process-electricity multiplier,technology family min,-0.0034,50000,20260702
+B,R1,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0097,50000,20260702
+B,R1,rem_mult_S0,residual multiplier,pathway S0,0.0024,50000,20260702
+B,R1,rem_mult_M1,residual multiplier,pathway M1,-0.0017,50000,20260702
+B,R1,rem_mult_M2,residual multiplier,pathway M2,-0.0027,50000,20260702
+B,R1,rem_mult_M3,residual multiplier,pathway M3,0.0060,50000,20260702
+B,R1,rem_mult_M4,residual multiplier,pathway M4,-0.0098,50000,20260702
+B,R1,rem_mult_G1,residual multiplier,pathway G1,-0.0047,50000,20260702
+B,R1,rem_mult_G2,residual multiplier,pathway G2,0.0015,50000,20260702
+B,R1,rem_mult_U1,residual multiplier,pathway U1,0.0038,50000,20260702
+B,R1,rem_mult_U2a,residual multiplier,pathway U2a,-0.0060,50000,20260702
+B,R1,rem_mult_U2b,residual multiplier,pathway U2b,0.0032,50000,20260702
+B,R1,rem_mult_R1,residual multiplier,pathway R1,-0.3913,50000,20260702
+B,R1,rem_mult_R2,residual multiplier,pathway R2,-0.0019,50000,20260702
+B,R1,rem_mult_R3,residual multiplier,pathway R3,0.0006,50000,20260702
+B,R1,reag_mult,capture-solvent multiplier (R1),capture pathways only,-0.0026,50000,20260702
+B,R1,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0030,50000,20260702
+B,R1,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0084,50000,20260702
+B,R1,trans_mult_min,transport multiplier (R1),capture family min,0.0021,50000,20260702
+B,R2,fossil_C,shared background,all,0.8879,50000,20260702
+B,R2,throughput,shared background,all,0.0874,50000,20260702
+B,R2,grid_EF,shared background,all,-0.1494,50000,20260702
+B,R2,capture_rate,shared background,capture pathways only,0.0125,50000,20260702
+B,R2,H2_EF,shared background,utilization pathways only,0.0010,50000,20260702
+B,R2,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.8816,50000,20260702
+B,R2,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0024,50000,20260702
+B,R2,elec_mult_cr,process-electricity multiplier,technology family cr,-0.0018,50000,20260702
+B,R2,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0019,50000,20260702
+B,R2,elec_mult_min,process-electricity multiplier,technology family min,-0.0006,50000,20260702
+B,R2,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0061,50000,20260702
+B,R2,rem_mult_S0,residual multiplier,pathway S0,0.0028,50000,20260702
+B,R2,rem_mult_M1,residual multiplier,pathway M1,-0.0015,50000,20260702
+B,R2,rem_mult_M2,residual multiplier,pathway M2,-0.0042,50000,20260702
+B,R2,rem_mult_M3,residual multiplier,pathway M3,0.0045,50000,20260702
+B,R2,rem_mult_M4,residual multiplier,pathway M4,-0.0133,50000,20260702
+B,R2,rem_mult_G1,residual multiplier,pathway G1,-0.0063,50000,20260702
+B,R2,rem_mult_G2,residual multiplier,pathway G2,0.0041,50000,20260702
+B,R2,rem_mult_U1,residual multiplier,pathway U1,0.0056,50000,20260702
+B,R2,rem_mult_U2a,residual multiplier,pathway U2a,-0.0075,50000,20260702
+B,R2,rem_mult_U2b,residual multiplier,pathway U2b,-0.0002,50000,20260702
+B,R2,rem_mult_R1,residual multiplier,pathway R1,0.0040,50000,20260702
+B,R2,rem_mult_R2,residual multiplier,pathway R2,-0.3974,50000,20260702
+B,R2,rem_mult_R3,residual multiplier,pathway R3,-0.0044,50000,20260702
+B,R2,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0018,50000,20260702
+B,R2,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0048,50000,20260702
+B,R2,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0045,50000,20260702
+B,R2,trans_mult_min,transport multiplier (R1),capture family min,0.0041,50000,20260702
+B,R3,fossil_C,shared background,all,0.8893,50000,20260702
+B,R3,throughput,shared background,all,0.0849,50000,20260702
+B,R3,grid_EF,shared background,all,-0.1423,50000,20260702
+B,R3,capture_rate,shared background,capture pathways only,0.0124,50000,20260702
+B,R3,H2_EF,shared background,utilization pathways only,0.0001,50000,20260702
+B,R3,fossil_share,shared background,"capture pathways (credits, vents, losses)",0.8834,50000,20260702
+B,R3,elec_mult_ccu,process-electricity multiplier,technology family ccu,0.0039,50000,20260702
+B,R3,elec_mult_cr,process-electricity multiplier,technology family cr,0.0062,50000,20260702
+B,R3,elec_mult_geo,process-electricity multiplier,technology family geo,-0.0028,50000,20260702
+B,R3,elec_mult_min,process-electricity multiplier,technology family min,0.0014,50000,20260702
+B,R3,elec_mult_ref,process-electricity multiplier,technology family ref,-0.0053,50000,20260702
+B,R3,rem_mult_S0,residual multiplier,pathway S0,0.0022,50000,20260702
+B,R3,rem_mult_M1,residual multiplier,pathway M1,-0.0014,50000,20260702
+B,R3,rem_mult_M2,residual multiplier,pathway M2,-0.0058,50000,20260702
+B,R3,rem_mult_M3,residual multiplier,pathway M3,0.0109,50000,20260702
+B,R3,rem_mult_M4,residual multiplier,pathway M4,-0.0134,50000,20260702
+B,R3,rem_mult_G1,residual multiplier,pathway G1,-0.0089,50000,20260702
+B,R3,rem_mult_G2,residual multiplier,pathway G2,0.0028,50000,20260702
+B,R3,rem_mult_U1,residual multiplier,pathway U1,0.0039,50000,20260702
+B,R3,rem_mult_U2a,residual multiplier,pathway U2a,-0.0069,50000,20260702
+B,R3,rem_mult_U2b,residual multiplier,pathway U2b,0.0043,50000,20260702
+B,R3,rem_mult_R1,residual multiplier,pathway R1,0.0067,50000,20260702
+B,R3,rem_mult_R2,residual multiplier,pathway R2,-0.0042,50000,20260702
+B,R3,rem_mult_R3,residual multiplier,pathway R3,-0.3982,50000,20260702
+B,R3,reag_mult,capture-solvent multiplier (R1),capture pathways only,0.0010,50000,20260702
+B,R3,trans_mult_ccu,transport multiplier (R1),capture family ccu,0.0071,50000,20260702
+B,R3,trans_mult_geo,transport multiplier (R1),capture family geo,-0.0098,50000,20260702
+B,R3,trans_mult_min,transport multiplier (R1),capture family min,0.0011,50000,20260702
