@@ -20,14 +20,20 @@ UNITS = ['kWh', 'MWh', 'GWh', 'km', 'kg', 'MJ', 'GJ', 'y', 't', 'd', 'g', 'm']
 EXP_RE = re.compile(r'(?<![A-Za-z0-9_])(' + '|'.join(UNITS) + r')[-−]([123])(?!\d)(?![.,]\d)')   # 'y-1,' yes; 'y-1.5', 'y-1,000' no
 
 
-def segments(text):
-    """Split text into (piece, vert) with vert in {None, 'sub', 'sup'}."""
+EQ_LINE = re.compile(r'\((?:S?\d+[a-d]?)\)\s*$')
+
+
+def segments(text, units=True):
+    """Split text into (piece, vert) with vert in {None, 'sub', 'sup'}.
+
+    `units` is False inside an equation, where a unit exponent cannot occur but the same characters can:
+    F(t-1) is the value one year earlier, not F per tonne."""
     marks = []
     for m in CHEM_RE.finditer(text):
         f = m.group(1)
         for k in re.finditer(r'\d+', f):
             marks.append((m.start(1) + k.start(), m.start(1) + k.end(), 'sub', None))
-    for m in EXP_RE.finditer(text):
+    for m in (EXP_RE.finditer(text) if units else ()):
         marks.append((m.end(1), m.end(2), 'sup', '−' + m.group(2)))
     if not marks:
         return None
@@ -43,11 +49,11 @@ def segments(text):
     return out
 
 
-def fix_paragraph(p, counts):
+def fix_paragraph(p, counts, units=True):
     for r in list(p.runs):
         if r._r.xpath('.//w:drawing') or not r.text:
             continue
-        seg = segments(r.text)
+        seg = segments(r.text, units)
         if not seg:
             continue
         base = copy.deepcopy(r._r)
@@ -73,7 +79,7 @@ def fix_paragraph(p, counts):
 
 def walk(container, counts):
     for p in container.paragraphs:
-        fix_paragraph(p, counts)
+        fix_paragraph(p, counts, units=not EQ_LINE.search(p.text.strip()))
     for t in container.tables:
         for row in t.rows:
             for cell in row.cells:

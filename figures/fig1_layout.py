@@ -104,7 +104,9 @@ def build():
                                              'Ten grid regions; 2050 background', 'Monte Carlo, N = 50,000'])]
     for x, (t, lines) in zip(xa, acc):
         box(x, y0, x + wd3, y1, t, lines, COL['acc'])
-    line([(L + 0.3, 1.88), (R - 0.3, 1.88)])
+    # the collector runs from the outermost connector to the outermost connector and no further
+    ends = [xs[i] + wd / 2 for i in range(4)] + [xa[i] + wd3 / 2 for i in range(3)]
+    line([(min(ends), 1.88), (max(ends), 1.88)])
     for i in range(4):
         line([(xs[i] + wd / 2, 2.05), (xs[i] + wd / 2, 1.88)])
     for i in range(3):
