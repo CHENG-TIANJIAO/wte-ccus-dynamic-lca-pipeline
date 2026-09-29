@@ -1,13 +1,14 @@
 # Verification — version 1.1.0 (revision R1, parameter ledger R1g)
 
-Two independent runs of this content were performed on 2026-09-20 with Python 3.11.9,
+Independent runs of this content were performed on 2026-09-20 and, after the last change to
+Figure 1, repeated on 2026-09-29, with Python 3.11.9,
 numpy 2.4.2, openpyxl 3.1.5, matplotlib 3.10.8 and pandas 3.0.1 on Windows x86-64: one in a
 clean directory outside any working tree, and one in this repository.
 
-## 1. Clean-directory run of the archive submitted to the journal
+## 1. Clean-directory run of the release archive
 
-The archive that accompanies the revision holds the same content as this repository in the
-same layout. It was checked as a container and then run in isolation.
+A ZIP archive holding the same content as this repository, in the same layout, was checked
+as a container and then run in isolation.
 
 1. The ZIP was inspected: unsafe paths none, duplicates none, non-ASCII names none, compiled
    bytecode none. 89 files, 16.55 MB.
@@ -40,10 +41,10 @@ Result:
 it is committed. All five exited 0 and the chain reported 0 self-check failures. Result:
 
 * All 15 reference CSV files in `code/outputs/` and all 14 matrices in `analysis/` are
-  byte-identical to the digests of the journal archive.
+  byte-identical to the digests of the release archive.
 * `Unified_calculation_workbook.xlsx` rebuilt and compared cell by cell against the shipped
   copy: 8,344 cells compared, 0 differences. The shipped copy is kept, so that the bytes here
-  are the bytes submitted to the journal.
+  are the bytes of the verified archive.
 * The smallest text in every figure is 7.0 pt or larger at the placed size, and all seven
   PNG files are byte-identical to Figures 1 to 6 and Fig. S1 as submitted.
 * `make_figs_R1.py` re-verified all 86 entries of `MANIFEST_SHA256.txt` with no difference in
@@ -79,9 +80,8 @@ with its PowerShell block. This is what a reader obtains from the released versi
   published matrices have been written, and every one of those matrices is reproduced byte
   for byte. Each file states this at the top.
 * This repository carries the model, its inputs and the figure scripts, not the manuscript
-  files. The manuscript, the Supplementary Information and the figure files are the ones
-  submitted to the journal.
-* The digest of the ZIP submitted to the journal is recorded with the submission, in the
-  sidecar file beside the archive. It is not reproduced here, and it is not the digest of the
-  archive that GitHub generates from a tag: those are different containers of the same
-  content, which `MANIFEST_SHA256.txt` identifies file by file.
+  files. The manuscript, the Supplementary Information and the figure files are published with
+  the article.
+* The digest of a ZIP depends on the container, so the digest of the verification ZIP is not
+  that of the archive GitHub and Zenodo generate from a tag; `MANIFEST_SHA256.txt` identifies
+  the content itself, file by file, in either container.

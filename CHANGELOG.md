@@ -8,9 +8,9 @@ Zenodo concept DOI, resolving to the newest version and cited in the manuscript:
 listed on that record page; version DOIs are not repeated here, because a release cannot
 contain the identifier that is minted from it.
 
-## [1.1.0] - unreleased
+## [1.1.0] - 2026-09-29
 
-Revision R1 of the manuscript (Waste Management, WM-26-3165). This version carries the
+Revision R1 of the manuscript. This version carries the
 frozen parameter ledger R1g, which is the sole numerical authority of the revised manuscript
 and its Supplementary Information; the intermediate ledgers R1a to R1f are development
 states and are not published.
@@ -75,11 +75,9 @@ differences, both analyses rewrote all fourteen published matrices byte for byte
 seven regenerated PNG figures are byte-identical to the figures embedded in the manuscript.
 `VERIFICATION.md` is the record of that run.
 
-Note on digests: the archive submitted to the journal is a separate ZIP container holding
-this same content, so its SHA-256 is not the digest of the archive that GitHub generates
-from this tag, and neither is the digest of the other. The digest of the file submitted to
-the journal is recorded with the submission; `MANIFEST_SHA256.txt` is what identifies the
-content itself, in either container.
+Note on digests: `MANIFEST_SHA256.txt` identifies the content file by file; the digest of
+the archive that GitHub and Zenodo generate from this tag depends on the container and is
+not repeated here.
 
 ## [1.0.1] - 2026-08-07
 
@@ -103,7 +101,7 @@ Changed:
 
 First public release accompanying the manuscript *"Time-resolved and region-sensitive
 climate assessment of thirteen CO2 capture, utilization and recycling pathways for
-municipal waste incineration"* (submitted to Waste Management). The packaged archive
+municipal waste incineration"* (original submission). The packaged archive
 carries the internal model version 4.0.
 
 Added:
@@ -131,6 +129,6 @@ Code - archive - manuscript mapping:
 
 | Code version | Parameter ledger | Manuscript |
 |---|---|---|
-| 1.1.0 | R1g | Waste Management, revision R1 (WM-26-3165) |
-| 1.0.1 | model version 4.0 | Waste Management, original submission |
-| 1.0.0 | model version 4.0 | Waste Management, original submission |
+| 1.1.0 | R1g | revision R1 |
+| 1.0.1 | model version 4.0 | original submission |
+| 1.0.0 | model version 4.0 | original submission |

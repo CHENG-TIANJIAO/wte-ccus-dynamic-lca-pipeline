@@ -137,14 +137,9 @@ inputs/               the two national survey files of the regional reconstructi
 docs/                 reproducibility, data dictionary, documentation/data licence
 MANIFEST_SHA256.txt   SHA-256 of the README and of every data, code and figure file; the
                       same paths and, except for the README, the same digests as the
-                      archive submitted with the revision
+                      verified release archive
 VERIFICATION.md       the clean-room verification run of this content
 ```
-
-The archive uploaded to the journal with revision R1 carries the same content in the same
-layout. It is a separate ZIP container, so its own SHA-256 differs from that of the archive
-GitHub generates from this tag; the digest of the file submitted to the journal is recorded
-with the submission.
 
 ## Citation
 
