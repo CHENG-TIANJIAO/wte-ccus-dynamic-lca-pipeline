@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Revision R1f of WM-26-3165 (author decision 2026-09-20): three items left "as shipped" in phase 2b
+Revision R1f of the manuscript (author decision 2026-09-20): three items left "as shipped" in phase 2b
 (P2B2_anchors.md section 9, items 3, 4 and 8) are corrected on top of the frozen R1e ledger.
 
   M4  CaO input: the source formula LCA計算!L71 = I71 x AE19 reads an unlabeled cell (0.422) beside the
@@ -39,7 +39,9 @@ EF = led['EF_OFFICIAL']
 TOL = 1e-6
 
 # ---------------------------------------------------------------- source cells (read-only)
-SRCDIR = r'F:\2024_張震_CCUS\04_成果物\LCCO2'
+# location of the laboratory source workbooks, which are not distributed (optional, as in derive_parameters.py);
+# without it the recorded values below are used
+SRCDIR = os.environ.get('CCUS_SRC_LCCO2', '')
 try:
     import openpyxl
     wm = openpyxl.load_workbook(os.path.join(SRCDIR, 'LCCO2計算（CO2固定化）.xlsx'), read_only=True, data_only=True)['LCA計算']

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Revision R1g of WM-26-3165 (2026-09-20): declared scenario SM4WATER, base unchanged.
+Revision R1g of the manuscript (2026-09-20): declared scenario SM4WATER, base unchanged.
 
   M4 process water: the calculation sheet charges 2,600 kg per 384.4 kg CO2 (LCCO2計算（CO2固定化）.xlsx!LCA計算!D81,
   I81 = 454,249.22 t/y, x AD22 0.00065 kg-CO2/kg = 295.26 t-CO2/y); the transcription of the source data gives

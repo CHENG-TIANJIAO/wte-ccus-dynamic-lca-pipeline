@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Phase 2C, revision R1 of WM-26-3165: write the corrected static anchors and the two
+Phase 2C, revision R1 of the manuscript: write the corrected static anchors and the two
 new explicit CAP-class terms into model_parameters.json of THIS LOCAL COPY.
 
 Source of every number written here: R1_revision/02_analyses/P2B_corrected_anchors.json

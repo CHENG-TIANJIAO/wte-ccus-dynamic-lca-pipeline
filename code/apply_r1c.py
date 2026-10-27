@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Revision R1c of WM-26-3165: write the unified modular boundary (BOUNDARY_DESIGN_R1c.md,
+Revision R1c of the manuscript: write the unified modular boundary (BOUNDARY_DESIGN_R1c.md,
 sections 1, 2, 6, decisions E1-E8) into model_parameters.json of THIS LOCAL COPY.
 Runs on top of apply_r1b.py (phase 2b, R1b); idempotent (a second run re-derives
 everything from the R1b state kept under STATIC_R1B, asserts, and writes nothing).

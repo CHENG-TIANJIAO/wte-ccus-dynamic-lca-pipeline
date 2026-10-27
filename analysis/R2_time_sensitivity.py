@@ -30,10 +30,10 @@ import sys
 sys.dont_write_bytecode = True
 sys.stdout.reconfigure(encoding='utf-8')
 AN = os.path.dirname(os.path.abspath(__file__))        # <root>/analysis
-SNAP = os.environ.get('R1_CODE') or os.path.normpath(os.path.join(AN, '..', 'code'))
+CODE = os.environ.get('R1_CODE') or os.path.normpath(os.path.join(AN, '..', 'code'))
 OUT = AN
-sys.path.insert(0, SNAP)
-os.chdir(SNAP)                                   # the model modules resolve their inputs relative to themselves
+sys.path.insert(0, CODE)
+os.chdir(CODE)                                   # the model modules resolve their inputs relative to themselves
 
 import numpy as np                               # noqa: E402
 import carbon_model as CB                        # noqa: E402
@@ -44,7 +44,7 @@ STORAGE = ('G1', 'G2')
 
 
 def read_csv(name):
-    with open(os.path.join(SNAP, 'outputs', name), encoding='utf-8') as fh:
+    with open(os.path.join(CODE, 'outputs', name), encoding='utf-8') as fh:
         return list(csv.DictReader(fh))
 
 
@@ -80,7 +80,7 @@ def guards():
                     abs(net_at(p, 1, 1, 1) - float(audit[p]['value_2050'])))
     assert worst < 5e-4, f'Shapley audit not reproduced: {worst}'
     # published break-even of storage (about 4,417 t-CO2/y): 2050 background, total waste carbon at its 2050
-    # value, only the fossil carbon varied (compare_P2C6.break_even in the R1g snapshot)
+    # value, only the fossil carbon varied, as published
     f = lambda F: CB.net('G1', F, SD.T50, SD.G50) - CB.net('S0', F, SD.T50, SD.G50)
     lo, hi = 1000.0, 40000.0
     for _ in range(200):

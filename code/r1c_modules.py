@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Revision R1c of WM-26-3165: the unified modular boundary of the nine capture pathways
+Revision R1c of the manuscript: the unified modular boundary of the nine capture pathways
 (R1_revision/BOUNDARY_DESIGN_R1c.md, sections 1, 2, 6 and decisions E1-E8) and the
 declared discrete scenarios, as ONE table of named items.
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Task F, R1f-F (Reviewer 3, comment 8): correlation structure among the thirteen
+Correlation structure among the thirteen
 pathways in the component-level Monte Carlo, recomputed on the R1f draws of chain_r1.
 
 Reads (read-only, chain_r1/calculation_code/outputs/):

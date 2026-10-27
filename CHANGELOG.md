@@ -11,8 +11,9 @@ contain the identifier that is minted from it.
 ## [1.2.0] - 2026-10-27
 
 Revision R2 of the manuscript. The model, its parameters (ledger R1g), its inputs and every
-result and figure of version 1.1.0 are unchanged; the 91 files of this version include the 86
-of version 1.1.0 with identical content, apart from this README.
+result and figure of version 1.1.0 are unchanged. Of the 86 files of version 1.1.0, 76 are
+byte-identical here; the README and nine scripts differ only in text (see Changed), and five
+files are added.
 
 Added - `analysis/R2_time_sensitivity.py`, an analysis of the time dimension that evaluates the
 unchanged model at more points than the two background states and four endpoints of 1.1.0:
@@ -30,6 +31,16 @@ The script checks itself against the shipped outputs: it reproduces the eight ba
 combinations of `Shapley_decomposition_audit.csv`, the four endpoints of
 `Fig5_source_data.csv` and the published break-even of storage on the 2050 background, and
 stops if any of them differs.
+
+Changed - documentation strings and comments only, in nine scripts, without any change to what
+they compute: the manuscript identifier, references to working files that are not part of this
+archive, and a local file path were replaced by neutral wording (`apply_r1_anchors.py`,
+`apply_r1b.py`, `apply_r1c.py`, `apply_r1d.py`, `apply_r1f.py`, `apply_r1g.py`,
+`r1c_modules.py`, `analysis/E5_shapley_interactions.py`, `analysis/F5_mc_correlation.py`).
+`apply_r1f.py`, an optional provenance step outside the default run, now reads the location of
+the laboratory source workbooks from the environment variable `CCUS_SRC_LCCO2`, as
+`derive_parameters.py` does; without it the script uses its recorded values, as before when
+the workbooks were absent.
 
 ## [1.1.0] - 2026-09-29
 

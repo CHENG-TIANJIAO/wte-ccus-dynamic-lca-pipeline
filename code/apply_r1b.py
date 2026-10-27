@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Phase 2b-C, revision R1 of WM-26-3165: write the phase-2b (R1b) anchors and parameters
+Phase 2b-C, revision R1 of the manuscript: write the phase-2b (R1b) anchors and parameters
 into model_parameters.json of THIS LOCAL COPY and install the tonnage-weighted regional
 table.  Runs on top of apply_r1_anchors.py (phase 2C); idempotent.
 

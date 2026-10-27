@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Revision R1d of WM-26-3165: the corrections from the independent audit of R1c
+Revision R1d of the manuscript: the corrections from the independent audit of R1c
 (R1_revision/02_analyses/AUDIT_R1c_modules.md, section 5), written into
 model_parameters.json of THIS LOCAL COPY on top of apply_r1c.py.  Idempotent: a
 second run re-derives everything from STATIC_R1C, asserts, and writes nothing.
