@@ -13,6 +13,7 @@ export PYTHONDONTWRITEBYTECODE=1                # Linux and macOS
 python code/run_all.py                          # the model
 python analysis/E5_shapley_interactions.py      # interaction terms, SI Table S29
 python analysis/F5_mc_correlation.py            # correlation matrices, SI Fig. S1
+python analysis/R2_time_sensitivity.py          # time dimension, SI Section S23
 python figures/make_figs_R1.py                  # Figures 2 to 6 and Fig. S1
 python figures/make_fig1_R1.py                  # Figure 1
 ```
@@ -22,6 +23,7 @@ $env:PYTHONDONTWRITEBYTECODE = "1"              # Windows PowerShell
 python code/run_all.py
 python analysis/E5_shapley_interactions.py
 python analysis/F5_mc_correlation.py
+python analysis/R2_time_sensitivity.py
 python figures/make_figs_R1.py
 python figures/make_fig1_R1.py
 ```

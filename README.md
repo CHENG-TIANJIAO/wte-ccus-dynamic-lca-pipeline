@@ -15,10 +15,11 @@ and propagated through a shared-draw Monte Carlo analysis.
 > shipped inputs from laboratory source workbooks that are not distributed; neither is
 > needed for any result.
 
-This version corresponds to revision R1 of the manuscript. What changed against v1.0.1 —
-a unified modular system boundary for the nine capture pathways, three corrected inventory
-items, the regional layer rebuilt from the facility-level national survey, and the declared
-scenarios — is listed in [`CHANGELOG.md`](CHANGELOG.md).
+This version corresponds to revision R2 of the manuscript. It carries the model and every
+result of version 1.1.0 (revision R1) unchanged and adds one analysis of the time dimension:
+the background path between the 2025 and 2050 states, a path-free sweep of the grid factor
+and the waste carbon, and the ranking at every annual assessment endpoint. What changed
+against v1.0.1 and v1.1.0 is listed in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## What it computes
 
@@ -45,6 +46,9 @@ scenarios — is listed in [`CHANGELOG.md`](CHANGELOG.md).
 8. **Correlation and interaction analyses** (`analysis/`) - the matrices behind
    Supplementary Fig. S1 (pairwise rank correlation and win probability of every pathway
    pair) and Supplementary Table S29 (the interaction terms of the Shapley decomposition).
+   **Time dimension** (`analysis/R2_time_sensitivity.py`) - the background path from 2025
+   to 2050, the path-free sweep of grid factor and waste carbon, and the ranks at every
+   annual endpoint from 2026 to 2125 (Supplementary Section S23, Tables S32 to S34).
 9. **Figures** (`figures/`) - Figure 1 from the model parameters and its layout definition,
    Figures 2 to 6 and Fig. S1 from the results, each drawn at the size at which it is
    placed in the manuscript.
@@ -60,6 +64,7 @@ export PYTHONDONTWRITEBYTECODE=1
 python code/run_all.py                               # the model: every number and source file
 python analysis/E5_shapley_interactions.py           # interaction terms (SI Table S29)
 python analysis/F5_mc_correlation.py                 # correlation matrices (SI Fig. S1)
+python analysis/R2_time_sensitivity.py               # time dimension (SI Section S23)
 python figures/make_figs_R1.py                       # Figures 2 to 6 and Fig. S1
 python figures/make_fig1_R1.py                       # Figure 1
 ```
@@ -73,6 +78,7 @@ $env:PYTHONDONTWRITEBYTECODE = "1"
 python code/run_all.py                               # the model: every number and source file
 python analysis/E5_shapley_interactions.py           # interaction terms (SI Table S29)
 python analysis/F5_mc_correlation.py                 # correlation matrices (SI Fig. S1)
+python analysis/R2_time_sensitivity.py               # time dimension (SI Section S23)
 python figures/make_figs_R1.py                       # Figures 2 to 6 and Fig. S1
 python figures/make_fig1_R1.py                       # Figure 1
 ```
@@ -102,7 +108,7 @@ shipped, with the two exceptions noted below.
 | 100-year cumulative forcing of a 1 kg CO2 pulse | 9.1721e-14 W m-2 y kg-1, against 9.1711e-14 for the closed-form integral, deviation 0.011 % |
 | Static national result, reference plant / fuel-grade methanol | 18,737.1785 / -45,803.0134 t-CO2 per year |
 | Static national result, direct olivine mineralization / steel-slag mineralization | 30,453.2334 / 81,898.0164 t-CO2 per year |
-| `analysis/` matrices after a re-run | byte-identical to the shipped copies |
+| `analysis/` matrices and time-dimension tables after a re-run | byte-identical to the shipped copies |
 | Figures after a re-run | the PNG files are byte-identical to those embedded in the manuscript |
 
 Under the pinned environment (Python 3.11.9, numpy 2.4.2, openpyxl 3.1.5, matplotlib 3.10.8,
@@ -129,7 +135,8 @@ code/                 the complete chain; run_all.py is the single entry point
   region_waste_carbon.csv    ten-region composition profiles
   regional_source/           prefecture profiles and the optional re-derivation script
   outputs/                   the machine-readable results the chain reproduces
-analysis/             the two analyses behind SI Fig. S1 and SI Table S29, and their matrices
+analysis/             the analyses behind SI Fig. S1, SI Table S29 and SI Section S23,
+                      and their output tables
 figures/              the scripts that render Figure 1 and Figures 2 to 6 and Fig. S1,
                       and the typesetting post-processor applied to the manuscript file
 inputs/               the two national survey files of the regional reconstruction, with

@@ -8,6 +8,29 @@ Zenodo concept DOI, resolving to the newest version and cited in the manuscript:
 listed on that record page; version DOIs are not repeated here, because a release cannot
 contain the identifier that is minted from it.
 
+## [1.2.0] - 2026-10-27
+
+Revision R2 of the manuscript. The model, its parameters (ledger R1g), its inputs and every
+result and figure of version 1.1.0 are unchanged; the 91 files of this version include the 86
+of version 1.1.0 with identical content, apart from this README.
+
+Added - `analysis/R2_time_sensitivity.py`, an analysis of the time dimension that evaluates the
+unchanged model at more points than the two background states and four endpoints of 1.1.0:
+- a background path, with the grid factor, the waste carbon and the hydrogen factor moved
+  together in annual steps from their 2025 to their 2050 values
+  (`R2_background_trajectory.csv`); the linear path is an illustration, not a forecast;
+- a path-free sweep of the grid factor and the waste carbon over the whole range between
+  their 2025 and 2050 values, with the hydrogen factor at either value
+  (`R2_grid_waste_sweep.csv`), and the break-even of geological storage against the grid
+  factor;
+- cumulative radiative forcing and competition ranks at every annual endpoint from 2026 to
+  2125 under both chemical-recycling treatments (`R2_endpoint_annual.csv`);
+- a summary of the three (`R2_time_sensitivity_summary.md`).
+The script checks itself against the shipped outputs: it reproduces the eight background
+combinations of `Shapley_decomposition_audit.csv`, the four endpoints of
+`Fig5_source_data.csv` and the published break-even of storage on the 2050 background, and
+stops if any of them differs.
+
 ## [1.1.0] - 2026-09-29
 
 Revision R1 of the manuscript. This version carries the
