@@ -1,4 +1,34 @@
-# Verification — version 1.1.0 (revision R1, parameter ledger R1g)
+# Verification — version 1.2.0 (revision R2, parameter ledger R1g)
+
+Version 1.2.0 adds `analysis/R2_time_sensitivity.py` and its four output files and changes nothing
+else in the model, its parameters, inputs, results or figures. It was verified on 2026-10-27 with
+Python 3.11.9, numpy 2.4.2, openpyxl 3.1.5, matplotlib 3.10.8 and pandas 3.0.1 on Windows x86-64.
+
+The repository was cloned into an empty directory and the Quickstart of the README was followed
+there command for command, once with its Bash block and once, in a second clone, with its
+PowerShell block. In both shells:
+
+* All 91 digests of `MANIFEST_SHA256.txt` held in the fresh checkout.
+* All six commands exited 0, the chain reported 0 self-check failures, and no byte-code directory
+  was written.
+* After the run, 90 of the 91 files were byte-identical, among them the four outputs of the new
+  analysis. The exception is `code/outputs/Unified_calculation_workbook.xlsx`: its container
+  stores a timestamp, and of its 8,344 cells the only one that differed is the provenance cell
+  `7_Provenance!B10`, which records the operating-system build of the machine that wrote the file
+  (Windows 10.0.26300 at this run, 10.0.26200 when the shipped copy was written). Every
+  calculated cell is identical.
+* The seven regenerated PNG figures are byte-identical to the figures of the manuscript.
+* `analysis/R2_time_sensitivity.py` stops unless it reproduces the eight background combinations
+  of `Shapley_decomposition_audit.csv`, the four endpoints of `Fig5_source_data.csv` and the
+  published break-even of storage on the 2050 background; it passed. Its results were also
+  recomputed independently from the same model code, from the definitions alone, and agreed in
+  all 3,328 compared values and ranks.
+
+The record of version 1.1.0 follows unchanged.
+
+---
+
+## Version 1.1.0 (revision R1, parameter ledger R1g)
 
 Independent runs of this content were performed on 2026-09-20 and, after the last change to
 Figure 1, repeated on 2026-09-29, with Python 3.11.9,

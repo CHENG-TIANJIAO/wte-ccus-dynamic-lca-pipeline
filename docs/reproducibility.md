@@ -51,7 +51,7 @@ the files inside it, under Python 3.11.9 with the pinned library versions on Win
 Result:
 
 - The chain completed with no self-check failure, and 85 of the 86 shipped files were
-  reproduced or read back byte for byte.
+  reproduced or read back byte for byte (version 1.1.0; for version 1.2.0, 90 of 91).
 - `Unified_calculation_workbook.xlsx` rebuilt with zero cell and zero formula differences;
   only container timestamps differ, which is the one file that cannot be byte-identical.
 - Both analyses ran in the unpacked directory and rewrote all 14 published matrices byte for
