@@ -1,8 +1,10 @@
 # Verification — version 1.2.0 (revision R2, parameter ledger R1g)
 
 Version 1.2.0 adds `analysis/R2_time_sensitivity.py` and its four output files and changes nothing
-else in the model, its parameters, inputs, results or figures. It was verified on 2026-10-27 with
-Python 3.11.9, numpy 2.4.2, openpyxl 3.1.5, matplotlib 3.10.8 and pandas 3.0.1 on Windows x86-64.
+else in the model, its parameters, inputs, results or figures; nine scripts differ from 1.1.0 only
+in comments and documentation strings (see CHANGELOG.md). It was verified on 2026-10-27, on the
+final content of this version, with Python 3.11.9, numpy 2.4.2, openpyxl 3.1.5, matplotlib 3.10.8
+and pandas 3.0.1 on Windows x86-64.
 
 The repository was cloned into an empty directory and the Quickstart of the README was followed
 there command for command, once with its Bash block and once, in a second clone, with its
@@ -23,6 +25,8 @@ PowerShell block. In both shells:
   published break-even of storage on the 2050 background; it passed. Its results were also
   recomputed independently from the same model code, from the definitions alone, and agreed in
   all 3,328 compared values and ranks.
+* `code/apply_r1f.py`, an optional provenance step, was run without the laboratory source
+  workbooks: it exited 0, used its recorded values and changed no file.
 
 The record of version 1.1.0 follows unchanged.
 
