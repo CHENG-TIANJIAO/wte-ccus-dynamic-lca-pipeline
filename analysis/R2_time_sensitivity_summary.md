@@ -1,6 +1,6 @@
 # Time-dimension sensitivity (revision R2) — summary
 
-Guards: Shapley audit (8 corners x 13 pathways, and both ends) reproduced, worst deviation 4.87e-05 t-CO2/y; waste-only storage break-even 4,416.7 t-CO2/y fossil (published 4,417); four published endpoints reproduced, worst relative CRF deviation 3.8e-07, all ranks equal.
+Checks: Shapley audit (8 corners x 13 pathways, and both ends) reproduced, worst deviation 4.87e-05 t-CO2/y; waste-only storage break-even 4,416.7 t-CO2/y fossil (published 4,417); four published endpoints reproduced, worst relative CRF deviation 3.8e-07, all ranks equal.
 
 ## A. Linear background trajectory 2025 -> 2050 (all three drivers together)
 
@@ -13,8 +13,8 @@ Guards: Shapley audit (8 corners x 13 pathways, and both ends) reproduced, worst
 | 2045 | 0.141 | 13,628 | 11,212 | 4,297 | -6,915 | -6,900 | -63,353 | U2a U2b U1 R1 R2 R3 G1 G2 S0 M1 M2 M3 M4 |
 | 2050 | 0.070 | 10,416 | 9,331 | 3,932 | -5,399 | -5,392 | -66,489 | U2a U2b U1 R1 R2 R3 G1 G2 S0 M1 M2 M3 M4 |
 
-Leader in every year: ['U2a']; storage minus reference ranges -11,799 to -5,399 (G1), -11,742 to -5,392 (G2); negative in every year: True.
-Pathways whose rank changes somewhere along the path: ['G1', 'G2', 'R1', 'R2', 'R3', 'S0', 'U1'].
+Leader in every year: U2a. Storage minus reference ranges from -11,799 to -5,399 (G1) and from -11,742 to -5,392 (G2); negative in every year.
+Pathways whose rank changes somewhere along the path: G1, G2, R1, R2, R3, S0, U1.
   G1: 2025: 6, 2036: 7
   G2: 2025: 7, 2036: 8
   R1: 2025: 3, 2045: 4
@@ -25,8 +25,8 @@ Pathways whose rank changes somewhere along the path: ['G1', 'G2', 'R1', 'R2', '
 
 ## B. Path-free sweep: grid 0.423 -> 0.07 t-CO2/MWh x waste fossil carbon 26,475 -> 10,416 t-CO2/y
 
-- hydrogen at its 2025 value: G1-S0 from -19,024 to 351, G2-S0 from -19,015 to 396; storage below the reference everywhere: False; leader everywhere: ['U2a'] (smallest margin over second 33,041 t-CO2/y)
-- hydrogen at its 2050 value: G1-S0 from -19,024 to 351, G2-S0 from -19,015 to 396; storage below the reference everywhere: False; leader everywhere: ['U2a'] (smallest margin over second 33,041 t-CO2/y)
+- hydrogen at its 2025 value: G1-S0 from -19,024 to 351, G2-S0 from -19,015 to 396; storage below the reference at 1,292 of 1,296 points; leader at every point: U2a (smallest margin over the second 33,041 t-CO2/y)
+- hydrogen at its 2050 value: G1-S0 from -19,024 to 351, G2-S0 from -19,015 to 396; storage below the reference at 1,292 of 1,296 points; leader at every point: U2a (smallest margin over the second 33,041 t-CO2/y)
 
 Break-even fossil combustion CO2 of storage (G1 = S0; total waste carbon at its 2050 value) against the grid factor:
   grid 0.070: 4,417 t-CO2/y fossil (plastic ~2.1 % wet, linear rule 5 % at 10,416)
@@ -37,8 +37,8 @@ Break-even fossil combustion CO2 of storage (G1 = S0; total waste carbon at its 
 
 ## C. Every annual endpoint 2026 -> 2125
 
-- treatment A: leader at every endpoint ['U2a'], second ['U2b']; U2b share of the U2a benefit 28.1% at 2026, 32.3% at 2030, 73.4% at 2050, 94.3% at 2125; pathways whose rank changes across endpoints: none
-- treatment B: leader at every endpoint ['U2a'], second ['U2b']; U2b share of the U2a benefit 28.1% at 2026, 32.3% at 2030, 73.4% at 2050, 94.3% at 2125; pathways whose rank changes across endpoints: ['G1', 'G2', 'R2', 'R3']
+- treatment A: leader at every endpoint U2a, second U2b; U2b share of the U2a benefit 28.1% at 2026, 32.3% at 2030, 73.4% at 2050, 92.2% at 2100, 94.3% at 2125; pathways whose rank changes across endpoints: none
+- treatment B: leader at every endpoint U2a, second U2b; U2b share of the U2a benefit 28.1% at 2026, 32.3% at 2030, 73.4% at 2050, 92.2% at 2100, 94.3% at 2125; pathways whose rank changes across endpoints: G1, G2, R2, R3
     G1: 2026: 5, 2049: 4, 2060: 3
     G2: 2026: 6, 2050: 5, 2060: 4
     R2: 2026: 3, 2030: 4, 2049: 5, 2050: 6

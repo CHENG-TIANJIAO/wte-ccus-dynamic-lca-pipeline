@@ -197,7 +197,7 @@ def main():
     L = []
     w = L.append
     w('# Time-dimension sensitivity (revision R2) — summary\n')
-    w(f'Guards: Shapley audit (8 corners x 13 pathways, and both ends) reproduced, worst deviation '
+    w(f'Checks: Shapley audit (8 corners x 13 pathways, and both ends) reproduced, worst deviation '
       f'{worst_a:.2e} t-CO2/y; waste-only storage break-even {F_be:,.1f} t-CO2/y fossil (published 4,417); '
       f'four published endpoints reproduced, worst relative CRF deviation {worst_c:.1e}, all ranks equal.\n')
     w('## A. Linear background trajectory 2025 -> 2050 (all three drivers together)\n')
@@ -211,12 +211,12 @@ def main():
               f"{' '.join(order)} |")
     leaders = {sorted(ORDER, key=lambda p: r['values'][p])[0] for r in A}
     adv_all = [r['adv'] for r in A]
-    w(f"\nLeader in every year: {sorted(leaders)}; storage minus reference ranges "
-      f"{min(a[0] for a in adv_all):,.0f} to {max(a[0] for a in adv_all):,.0f} (G1), "
+    w(f"\nLeader in every year: {', '.join(sorted(leaders))}. Storage minus reference ranges from "
+      f"{min(a[0] for a in adv_all):,.0f} to {max(a[0] for a in adv_all):,.0f} (G1) and from "
       f"{min(a[1] for a in adv_all):,.0f} to {max(a[1] for a in adv_all):,.0f} (G2); "
-      f"negative in every year: {all(a[0] < 0 and a[1] < 0 for a in adv_all)}.")
+      f"{'negative in every year' if all(a[0] < 0 and a[1] < 0 for a in adv_all) else 'not negative in every year'}.")
     rank_changes = sorted({p for p in ORDER for r in A if r['ranks'][p] != A[0]['ranks'][p]})
-    w(f"Pathways whose rank changes somewhere along the path: {rank_changes or 'none'}.")
+    w(f"Pathways whose rank changes somewhere along the path: {', '.join(rank_changes) or 'none'}.")
     for p in rank_changes:
         seq = []
         for r in A:
@@ -229,10 +229,13 @@ def main():
         a2 = [v[1] for k, v in adv.items() if k[0] == h]
         leads = {lead[k][0] for k in lead if k[0] == h}
         margin = min(lead[k][1] for k in lead if k[0] == h)
+        n_up = sum(1 for k, v in adv.items() if k[0] == h and (v[0] >= 0 or v[1] >= 0))
+        n_all = sum(1 for k in adv if k[0] == h)
+        below = ('storage below the reference at every point' if n_up == 0 else
+                 f'storage below the reference at {n_all - n_up:,} of {n_all:,} points')
         w(f"- hydrogen at its {'2050' if h else '2025'} value: G1-S0 from {min(a1):,.0f} to {max(a1):,.0f}, "
-          f"G2-S0 from {min(a2):,.0f} to {max(a2):,.0f}; storage below the reference everywhere: "
-          f"{max(a1) < 0 and max(a2) < 0}; leader everywhere: {sorted(leads)} "
-          f"(smallest margin over second {margin:,.0f} t-CO2/y)")
+          f"G2-S0 from {min(a2):,.0f} to {max(a2):,.0f}; {below}; leader at every point: "
+          f"{', '.join(sorted(leads))} (smallest margin over the second {margin:,.0f} t-CO2/y)")
     w('\nBreak-even fossil combustion CO2 of storage (G1 = S0; total waste carbon at its 2050 value) against '
       'the grid factor:')
     for EF in (0.07, 0.15, 0.25, 0.35, 0.423):
@@ -245,10 +248,11 @@ def main():
         leaders = {min(r['crf'], key=r['crf'].get) for r in ph}
         second = {sorted(ORDER, key=lambda p: r['crf'][p])[1] for r in ph}
         changing = sorted({p for p in ORDER for r in ph if r['ranks'][p] != ph[0]['ranks'][p]})
-        w(f"- treatment {case}: leader at every endpoint {sorted(leaders)}, second {sorted(second)}; "
-          f"U2b share of the U2a benefit {100 * ph[0]['share']:.1f}% at {ph[0]['year']}, "
-          f"{100 * ph[4]['share']:.1f}% at 2030, {100 * ph[24]['share']:.1f}% at 2050, "
-          f"{100 * ph[-1]['share']:.1f}% at 2125; pathways whose rank changes across endpoints: {changing or 'none'}")
+        w(f"- treatment {case}: leader at every endpoint {', '.join(sorted(leaders))}, second "
+          f"{', '.join(sorted(second))}; U2b share of the U2a benefit {100 * ph[0]['share']:.1f}% at "
+          f"{ph[0]['year']}, {100 * ph[4]['share']:.1f}% at 2030, {100 * ph[24]['share']:.1f}% at 2050, "
+          f"{100 * ph[74]['share']:.1f}% at 2100, {100 * ph[-1]['share']:.1f}% at 2125; pathways whose rank "
+          f"changes across endpoints: {', '.join(changing) or 'none'}")
         for p in changing:
             seq = []
             for r in ph:
